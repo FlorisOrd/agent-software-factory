@@ -11,6 +11,30 @@ business information or authorization is actually needed. The owner receives wha
 works, what was checked, any failures and fixes, remaining uncertainty and the
 decision needed. Implementation is not independent acceptance or deployment.
 
+For example, a small Factory maintenance request could be:
+
+> In this Factory repository, add a short checklist to README.md explaining what
+> I should include in a maintenance request: the desired outcome, what may change,
+> what must stay unchanged, and how I can tell it is done. Change only README.md,
+> preserve the existing guidance, and deliver an unmerged draft pull request with
+> the check and independent review results.
+
+The lead turns that request into a bounded brief and keeps the technical handoffs
+within the team. The owner receives these progress states:
+
+| State | What it means for the owner |
+| --- | --- |
+| `IN PROGRESS` | Work or required evidence is still incomplete. Missing review evidence, or results for an earlier revision, cannot make the current change ready. |
+| `CHANGES REQUESTED` | A relevant check failed or the separate verifier found a blocking issue. The builder fixes it, then the updated change receives fresh checks and independent review. |
+| `READY FOR OWNER REVIEW` | The brief, separate builder and verifier results, and required live workflow evidence are recorded. The verifier reviewed the current change, required checks and CI pass for it, no blocking findings remain, and the draft pull request matches that change. The owner can review the report and any decision needed. |
+
+For [ASF-MVP-01](docs/ASF-MVP-01.md), the delivery report uses
+`IMPLEMENTED — AWAITING INDEPENDENT VERIFICATION` when implementation is delivered
+for final independent verification, or `PARTIAL/BLOCKED` with the exact unmet
+criterion when delivery is incomplete. ChatGPT retains the final independent
+verification role. `READY FOR OWNER REVIEW` is a handoff state; it grants neither
+independent product acceptance nor permission to merge or deploy.
+
 The [initial requirement and acceptance criteria](docs/ASF-MVP-01.md) define this
 first slice. The repository skill is the reusable functionality; it requires a
 Codex session with native agent delegation and authorized GitHub access. Missing

@@ -1,15 +1,25 @@
 #!/usr/bin/env node
 // Static installation check. Live delegation and delivery readiness require
 // independent session and commit-specific evidence; this script cannot prove them.
-import { readFileSync } from 'node:fs';
-import { resolve, relative, dirname } from 'node:path';
+import { readFileSync, realpathSync } from 'node:fs';
+import { resolve, relative, dirname, isAbsolute } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
+const canonicalRoot = realpathSync(root);
 const skillPath = '.agents/skills/factory-delivery/SKILL.md';
 
+function requireContained(base, destination, path) {
+  const localPath = relative(base, destination);
+  requireThat(!isAbsolute(localPath) && localPath !== '..' && !localPath.startsWith('..\\') && !localPath.startsWith('../'), `${path}: path escapes the repository`);
+}
+
 function read(path) {
-  return readFileSync(resolve(root, path), 'utf8').replaceAll('\r\n', '\n');
+  const destination = resolve(root, path);
+  requireContained(root, destination, path);
+  const canonicalDestination = realpathSync(destination);
+  requireContained(canonicalRoot, canonicalDestination, path);
+  return readFileSync(canonicalDestination, 'utf8').replaceAll('\r\n', '\n');
 }
 
 function requireThat(condition, message) {
@@ -21,9 +31,7 @@ function checkLocalLinks(path) {
     const target = match[1];
     if (/^https:\/\//.test(target) || target.startsWith('#')) continue;
     const destination = resolve(root, dirname(path), target.split('#')[0]);
-    const localPath = relative(root, destination);
-    requireThat(localPath !== '..' && !localPath.startsWith('..\\') && !localPath.startsWith('../'), `${path}: link escapes the repository`);
-    read(localPath);
+    read(destination);
   }
 }
 
