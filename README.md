@@ -44,3 +44,10 @@ The repository check verifies static installation structure. CI reports the
 revision it checks; live delegation and independent review need separate session
 and commit-specific evidence. Agent roles and readiness rules are procedural:
 they do not isolate agents or replace the session's effective permission controls.
+
+The first customer-facing pilot is the
+[quantum-readiness assessment](products/quantum-readiness/README.md): a private
+local interface for an explicitly authorized HTTPS endpoint, evidence-backed
+findings, and a proposed migration plan. Its controlled demonstration uses only
+task-owned local TLS endpoints. It is separate from the completed Factory setup
+and does not grant permission to scan customers, deploy, or merge changes.

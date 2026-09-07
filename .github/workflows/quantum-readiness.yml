@@ -1,0 +1,59 @@
+name: Check quantum-readiness pilot
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  quantum-readiness:
+    name: Controlled TLS, security, and browser checks
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: products/quantum-readiness
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: products/quantum-readiness/package-lock.json
+      - name: Record runtime and checked revision
+        run: |
+          node --version
+          openssl version
+          git rev-parse HEAD
+          git rev-parse HEAD^{tree}
+      - name: Install locked dependencies
+        run: npm ci
+      - name: Check unit, integration, and network boundaries
+        run: npm test
+      - name: Install browser
+        run: npx playwright install --with-deps chromium
+      - name: Exercise controlled browser journey and exports
+        run: npm run test:browser
+      - name: Preserve existing Factory checks
+        working-directory: .
+        run: |
+          node --check scripts/check-workflow.mjs
+          node scripts/check-workflow.mjs
+      - name: Preserve controlled browser evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: quantum-readiness-browser-evidence
+          path: |
+            products/quantum-readiness/.artifacts/browser-demo.png
+            products/quantum-readiness/.artifacts/browser-report.png
+            products/quantum-readiness/.artifacts/browser-mobile.png
+            products/quantum-readiness/.artifacts/browser-check.json
+            products/quantum-readiness/.artifacts/controlled-reports.json
+          include-hidden-files: true
+          if-no-files-found: error

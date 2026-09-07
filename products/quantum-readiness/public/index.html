@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light">
+    <title>Quantum readiness · Website assessment</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="/" aria-label="Quantum readiness home"><span class="brand-mark" aria-hidden="true">Q</span>Quantum readiness</a>
+      <span class="pilot-badge">Private pilot</span>
+    </header>
+    <main>
+      <div id="demo-banner" class="notice demo-notice" hidden>
+        <strong>Controlled demonstration</strong>
+        <span>These task-owned fixtures use real local TLS connections and test certificates. They do not represent a company assessment.</span>
+      </div>
+      <section class="introduction" aria-labelledby="page-title">
+        <p class="eyebrow">Website cryptography, made actionable</p>
+        <h1 id="page-title">Understand your next<br> step toward quantum readiness.</h1>
+        <p class="lede">Measure one authorized website’s exposed TLS connection. Get the evidence, its limits, and a practical migration plan.</p>
+        <div class="scope-pills" aria-label="Assessment scope"><span>One hostname</span><span>Bounded TLS handshakes</span><span>No automatic changes</span></div>
+      </section>
+      <div class="assessment-layout">
+        <section class="panel input-panel" aria-labelledby="assessment-title">
+          <div class="section-heading"><span class="step-number">01</span><h2 id="assessment-title">Define the assessment</h2></div>
+          <form id="assessment-form" novalidate>
+            <div id="demo-picker" class="field" hidden>
+              <label for="demo-target">Controlled test case</label>
+              <select id="demo-target"><option value="">Choose a test case</option></select>
+            </div>
+            <div class="field">
+              <label for="hostname">HTTPS hostname</label>
+              <input id="hostname" name="hostname" type="text" placeholder="www.example.com" autocomplete="off" autocapitalize="none" spellcheck="false" required aria-describedby="hostname-hint">
+              <p id="hostname-hint" class="hint">Enter a hostname only. No URL, path, IP address, or custom port. The normal assessment uses port 443.</p>
+            </div>
+            <fieldset class="business-inputs">
+              <legend>Business context <span class="optional">Optional</span></legend>
+              <p class="hint">These answers help explain priority. Unanswered inputs stay unknown.</p>
+              <div class="field">
+                <label for="sensitivity">Data sensitivity</label>
+                <select id="sensitivity" name="sensitivity">
+                  <option value="unknown">Unknown / not supplied</option>
+                  <option value="public">Public</option>
+                  <option value="internal">Internal</option>
+                  <option value="sensitive">Sensitive</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="confidentiality">How long must data remain confidential?</label>
+                <select id="confidentiality" name="confidentiality">
+                  <option value="unknown">Unknown / not supplied</option>
+                  <option value="under-1-year">Less than 1 year</option>
+                  <option value="1-10-years">1–10 years</option>
+                  <option value="over-10-years">More than 10 years</option>
+                </select>
+              </div>
+            </fieldset>
+            <div class="permission-box">
+              <input id="authorized" name="authorized" type="checkbox" required aria-describedby="permission-hint">
+              <div><label for="authorized">I have permission to assess <strong id="permission-host">this exact hostname</strong>.</label><p id="permission-hint" class="hint">Confirm permission for this assessment. This declaration is not independent proof of domain ownership.</p></div>
+            </div>
+            <p id="form-error" class="error" role="alert" hidden></p>
+            <button id="assess-button" type="submit" disabled>Assess website <span aria-hidden="true">↗</span></button>
+            <p id="request-status" class="hint request-status" role="status" aria-live="polite">Connecting to the local assessment service…</p>
+          </form>
+        </section>
+        <aside class="scope-aside" aria-labelledby="scope-title">
+          <p class="eyebrow">Evidence before conclusions</p>
+          <h2 id="scope-title">A useful first look.<br> A clearly bounded view.</h2>
+          <ol class="journey">
+            <li><strong>Observe</strong><p>Compare classical and hybrid-capable TLS probe profiles. Preserve the actual connection evidence.</p></li>
+            <li><strong>Interpret</strong><p>Separate key establishment, certificate authentication, and conventional TLS hygiene.</p></li>
+            <li><strong>Plan</strong><p>Identify the responsible team, pilot a supported change, and define how to validate it.</p></li>
+          </ol>
+          <div class="boundary-note"><strong>What this cannot establish</strong><p>This covers the exposed endpoint at the tested address and time. It does not assess an entire company, internal systems, stored data, or every client configuration. It is not a certification or a “quantum safe” verdict.</p></div>
+        </aside>
+      </div>
+      <section id="report" class="report" aria-labelledby="report-title" tabindex="-1" hidden>
+        <div class="report-heading"><div><p class="eyebrow">Your assessment</p><h2 id="report-title">Evidence and next steps</h2></div><div class="export-actions"><a id="export-html" class="secondary-button" download>Download HTML</a><a id="export-json" class="secondary-button" download>Download JSON</a></div></div>
+        <div id="report-content"></div>
+      </section>
+      <footer class="page-footer"><p>Private, single-operator pilot · No automatic remediation</p><p id="retention-note">The local service keeps up to 20 reports for at most 30 minutes. Restart clears them. Exported files remain wherever you save them. No third-party report service is used.</p></footer>
+    </main>
+  </body>
+</html>
