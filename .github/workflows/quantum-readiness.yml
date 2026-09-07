@@ -50,7 +50,10 @@ jobs:
         with:
           name: quantum-readiness-browser-evidence
           path: |
-            products/quantum-readiness/.artifacts/browser-*.png
+            products/quantum-readiness/.artifacts/browser-demo.png
+            products/quantum-readiness/.artifacts/browser-report.png
+            products/quantum-readiness/.artifacts/browser-mobile.png
             products/quantum-readiness/.artifacts/browser-check.json
             products/quantum-readiness/.artifacts/controlled-reports.json
-          if-no-files-found: warn
+          include-hidden-files: true
+          if-no-files-found: error
