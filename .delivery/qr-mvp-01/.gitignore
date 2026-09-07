@@ -1,0 +1,9 @@
+# Execution evidence is published in PR discussion/artifacts without changing the reviewed head.
+*-*.log
+*-*.json
+*-*.png
+*-*.html
+*-*.txt
+*-*.zip
+*-*.md
+!SESSION.md
