@@ -11,7 +11,7 @@ const input=hostname=>({hostname,authorized:true,authorizedHostname:hostname});
 test('controlled real TLS: classical, standardized hybrid, certificate failure and timeout evidence',async t=>{
   const fixtures=await startFixtures();t.after(()=>fixtures.close());
   const reports={};
-  for(const hostname of Object.keys(fixtures.endpoints))reports[hostname]=await fixtures.scan(input(hostname));
+  for(const hostname of ['classical.qr.test','hybrid.qr.test','invalid.qr.test','timeout.qr.test'])reports[hostname]=await fixtures.scan(input(hostname));
   const classical=reports['classical.qr.test'];
   assert.equal(classical.observations[0].keyExchangeGroup,'X25519');
   assert.equal(classical.observations[1].status,'bounded-negative');

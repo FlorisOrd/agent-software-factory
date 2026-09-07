@@ -53,7 +53,12 @@ jobs:
             products/quantum-readiness/.artifacts/browser-demo.png
             products/quantum-readiness/.artifacts/browser-report.png
             products/quantum-readiness/.artifacts/browser-mobile.png
+            products/quantum-readiness/.artifacts/browser-multi-coverage.png
+            products/quantum-readiness/.artifacts/browser-multi-evidence.png
+            products/quantum-readiness/.artifacts/browser-sampled-coverage.png
+            products/quantum-readiness/.artifacts/browser-multi-mobile.png
             products/quantum-readiness/.artifacts/browser-check.json
             products/quantum-readiness/.artifacts/controlled-reports.json
+            products/quantum-readiness/.artifacts/controlled-multi-address-reports.json
           include-hidden-files: true
           if-no-files-found: error

@@ -3,12 +3,13 @@ import { mkdir, readFile, writeFile, stat } from 'node:fs/promises';
 import { resolve, join, dirname } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { startDemo } from './demo.mjs';
+import { escapeHtml } from '../src/report.mjs';
 
 const productRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const artifactRoot = join(productRoot, '.artifacts');
 await mkdir(artifactRoot, { recursive: true });
 const evidence = {
-  suite: 'QR-MVP-01 controlled browser journey',
+  suite: 'QR-MVP-02 controlled browser journey with QR-MVP-01 regressions',
   startedAt: new Date().toISOString(),
   runtime: { node: process.versions.node, openssl: process.versions.openssl },
   scope: 'Task-owned local TLS fixtures only. Hostile-string rendering uses a separately labelled mocked response.',
@@ -17,6 +18,7 @@ const evidence = {
   browserErrors: [],
 };
 let app;
+let coverageApp;
 let browser;
 let failure;
 
@@ -56,7 +58,7 @@ try {
     assert.equal(await page.locator('#demo-banner').isVisible(), true);
     assert.match(await page.locator('#demo-banner').innerText(), /real local TLS connections/);
     assert.match(await page.locator('#retention-note').innerText(), /20 reports.*30 minutes/);
-    assert.equal(await page.locator('#demo-target option').count(), 5);
+    assert.equal(await page.locator('#demo-target option').count(), 8);
   });
   await page.locator('#demo-target').selectOption('classical.qr.test');
   await check('Missing permission prevents the browser from requesting a probe', async () => {
@@ -192,6 +194,73 @@ try {
     assert.match(report.coverage, /Incomplete/);
     return { statuses: report.observations.map((item) => item.status), durationMs };
   });
+  // A second task-owned process gives the new demonstration its own assessment
+  // rate window; production rate-limit behavior is not changed or bypassed.
+  coverageApp = await startDemo();
+  await page.goto(coverageApp.url);
+  await page.locator('#assess-button:enabled').waitFor();
+  let sampledReport;
+  for (const hostname of ['mixed.qr.test', 'consistent.qr.test', 'sampled.qr.test']) {
+    await check(`Multi-address coverage, actual endpoints and exported sampling: ${hostname}`, async () => {
+      const report = await assess(hostname);
+      const sampling = report.scope.sampling;
+      assert.equal(await page.locator('#coverage-total').innerText(), String(sampling.totalValidatedAddresses));
+      assert.equal(await page.locator('#coverage-assessed').innerText(), String(sampling.assessedCount));
+      assert.equal(await page.locator('#coverage-unassessed').innerText(), String(sampling.unassessedCount));
+      assert.equal(await page.locator('#per-address-evidence .address-card').count(), sampling.selectedCount);
+      const coverageText = await page.locator('#address-coverage').innerText();
+      for (const address of report.scope.resolvedAddresses) assert.ok(coverageText.includes(address.address));
+      assert.ok(coverageText.includes(sampling.reason));
+      assert.match(coverageText, /not validated as public production destinations/);
+      assert.equal(new Set(report.observations.map(o => o.connectedAddress)).size, sampling.assessedCount);
+      assert.ok(report.observations.every(o => o.connectedAddress === o.resolvedAddress));
+      if (hostname === 'mixed.qr.test') {
+        assert.ok(report.crossAddressFindings.some(f => f.id === 'cross-address-hybrid'));
+        assert.match(await page.locator('#cross-address-findings').innerText(), /not proof.*absent/);
+        await page.locator('#address-coverage').screenshot({ path: join(artifactRoot, 'browser-multi-coverage.png') });
+        await page.locator('#per-address-evidence').screenshot({ path: join(artifactRoot, 'browser-multi-evidence.png') });
+      } else {
+        assert.equal(report.crossAddressFindings.length, 0);
+        assert.match(await page.locator('#cross-address-findings').innerText(), /No cross-address inconsistency was identified/);
+      }
+      const downloads = [];
+      for (const extension of ['json', 'html']) {
+        const downloadPromise = page.waitForEvent('download');
+        await page.locator(`#export-${extension}`).click();
+        const download = await downloadPromise;
+        assert.equal(await download.failure(), null);
+        const downloaded = await readFile(await download.path(), 'utf8');
+        if (extension === 'json') assert.deepEqual(JSON.parse(downloaded), report);
+        else assert.ok(downloaded.includes(escapeHtml(JSON.stringify(report, null, 2))), 'HTML must retain complete original observations and sampling');
+        downloads.push({ extension, filename: download.suggestedFilename(), bytes: Buffer.byteLength(downloaded) });
+      }
+      const last = report.observations.length - 1;
+      await page.locator(`#per-address-evidence a[href="#measured-observation-${last}"]`).click();
+      assert.deepEqual(JSON.parse(await page.locator(`#measured-observation-${last} pre`).innerText()), report.observations[last]);
+      const ids = await page.locator('#report [id]').evaluateAll(nodes => nodes.map(node => node.id));
+      assert.equal(new Set(ids).size, ids.length, 'Every evidence/finding anchor must be unique');
+      if (hostname === 'sampled.qr.test') {
+        sampledReport = report;
+        assert.equal(sampling.totalValidatedAddresses, 4);assert.equal(sampling.selectedCount, 3);assert.equal(sampling.unassessedCount, 1);
+        assert.equal(coverageApp.fixtures.counts.byEndpoint['sampled.qr.test|127.0.0.3'], undefined);
+        await page.locator('#address-coverage').screenshot({ path: join(artifactRoot, 'browser-sampled-coverage.png') });
+      }
+      return { hostname, sampling, crossAddressFindings: report.crossAddressFindings.map(f => f.id), downloads };
+    });
+  }
+  await check('Multi-address report remains readable on a narrow screen', async () => {
+    await page.setViewportSize({ width: 390, height: 844 });
+    const dimensions = await page.evaluate(() => ({ scroll: document.documentElement.scrollWidth, viewport: window.innerWidth }));
+    assert.ok(dimensions.scroll <= dimensions.viewport, JSON.stringify(dimensions));
+    assert.equal(await page.locator('#coverage-assessed').innerText(), String(sampledReport.scope.sampling.assessedCount));
+    await page.locator('#address-coverage').screenshot({ path: join(artifactRoot, 'browser-multi-mobile.png') });
+    await page.setViewportSize({ width: 1440, height: 1100 });
+    return dimensions;
+  });
+  await page.goto(app.url);
+  await page.locator('#assess-button:enabled').waitFor();
+  await coverageApp.close();
+  coverageApp = undefined;
   await check('Untrusted report fields render as text (mocked response only)', async () => {
     const marker = '<img src=x onerror="window.qrInjected=true">';
     const hostile = structuredClone(classicalReport);
@@ -231,6 +300,7 @@ try {
   evidence.finishedAt = new Date().toISOString();
   await writeFile(join(artifactRoot, 'browser-check.json'), `${JSON.stringify(evidence, null, 2)}\n`);
   await browser?.close();
+  await coverageApp?.close();
   await app?.close();
 }
 if (failure) process.exitCode = 1;

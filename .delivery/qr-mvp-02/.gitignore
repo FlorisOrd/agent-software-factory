@@ -1,0 +1,5 @@
+# Original execution evidence is published in the PR discussion without changing its reviewed head.
+*
+!.gitignore
+!SESSION.md
+!requirements.md
