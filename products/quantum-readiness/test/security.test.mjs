@@ -44,10 +44,10 @@ test('production permission and unsafe DNS targets make zero connection attempts
   await assert.rejects(scan(authorized('example.com')),/public/);assert.equal(connections,0);
 });
 
-test('production pins both probes to the first validated numeric IP without DNS re-resolution',async t=>{
+test('production single-address regression pins both probes without DNS re-resolution',async t=>{
   let dnsCalls=0;
   t.mock.method(Resolver.prototype,'resolve4',async()=>{dnsCalls++;return dnsCalls===1?['8.8.8.8']:['127.0.0.1'];});
-  t.mock.method(Resolver.prototype,'resolve6',async()=>['2606:4700::1111']);
+  t.mock.method(Resolver.prototype,'resolve6',async()=>[]);
   const attempts=[];
   t.mock.method(net,'connect',options=>{
     attempts.push(options);

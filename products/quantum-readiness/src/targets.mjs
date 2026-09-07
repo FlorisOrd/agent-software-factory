@@ -1,5 +1,6 @@
 import { isIP } from 'node:net';
 import { Resolver } from 'node:dns/promises';
+import { LIMITS } from './limits.mjs';
 
 export function normalizeHostname(value) {
   if (typeof value !== 'string' || value.length > 253) throw new Error('Enter one bare public hostname, without a URL, port or path.');
@@ -33,6 +34,45 @@ export function isPublicAddress(address) {
   return inRange('2000::',3) && ![['2001::',23],['2001:db8::',32],['2002::',16],['3fff::',20]].some(([base,bits]) => inRange(base,bits));
 }
 
+export function canonicalAddress(address) {
+  if (isIP(address) === 4) return address;
+  if (isIP(address) !== 6 || address.includes('.') || address.includes('%')) throw new Error('Invalid numeric address.');
+  // URL serialization uses a canonical compressed IPv6 representation; no network I/O.
+  return new URL(`http://[${address}]/`).hostname.slice(1,-1);
+}
+
+// Pure selection, also used by the separate task-owned fixture harness. Production
+// calls this only AFTER every returned answer passes the public destination policy.
+export function sampleValidatedAddresses(answers) {
+  const unique = new Map(answers.map(({address,family}) => {
+    if (isIP(address) !== family) throw new Error('Address family mismatch.');
+    const canonical = canonicalAddress(address);
+    return [canonical,{address:canonical,family}];
+  }));
+  const compare=(a,b)=>{
+    const left=a.family===4?BigInt(ipv4Number(a.address)):ipv6Number(a.address);
+    const right=b.family===4?BigInt(ipv4Number(b.address)):ipv6Number(b.address);
+    return left<right?-1:left>right?1:0;
+  };
+  const v4=[...unique.values()].filter(a=>a.family===4).sort(compare);
+  const v6=[...unique.values()].filter(a=>a.family===6).sort(compare);
+  const ordered=[];
+  for(let index=0;index<Math.max(v4.length,v6.length);index++) {
+    if(v4[index])ordered.push(v4[index]);
+    if(v6[index])ordered.push(v6[index]);
+  }
+  const selectedAddresses=ordered.slice(0,LIMITS.addresses);
+  const unselectedAddresses=ordered.slice(LIMITS.addresses);
+  return {
+    strategy:'numeric-sort-family-interleave-v1',maxAddresses:LIMITS.addresses,
+    dnsAnswerCount:answers.length,totalValidatedAddresses:ordered.length,duplicateAnswers:answers.length-ordered.length,
+    selectedCount:selectedAddresses.length,selectedAddresses,unselectedAddresses,
+    reason:unselectedAddresses.length
+      ? `The ${LIMITS.addresses}-address cap leaves ${unselectedAddresses.length} validated address(es) unselected. Numeric order alternates IPv4 then IPv6 while available; this sample does not represent every edge.`
+      : 'Every unique validated address fits within the three-address cap. This point-in-time sample does not establish coverage of other DNS answers, edges or clients.'
+  };
+}
+
 export function validateRequest(input) {
   if (!input || typeof input !== 'object' || Array.isArray(input)) throw new Error('An assessment request is required.');
   const hostname = normalizeHostname(input.hostname);
@@ -60,8 +100,10 @@ export async function resolvePublicTarget(hostname, { resolver, deadlineMs = 200
     resolve(hostname),
     new Promise((_,reject) => { timer = setTimeout(() => { ownedResolver?.cancel(); reject(new Error('DNS resolution deadline exceeded.')); }, deadlineMs); })
   ]).finally(() => { clearTimeout(timer); ownedResolver?.cancel(); });
-  if (!Array.isArray(results) || !results.length || results.length > 16) throw new Error('DNS returned no addresses or exceeded the 16-address limit.');
-  if (results.some(item => !isPublicAddress(item.address) || isIP(item.address) !== item.family)) throw new Error('All resolved IPv4 and IPv6 addresses must be public destinations.');
-  // All applicable answers have passed validation. Both probes use this same pinned IP.
-  return { hostname, port: 443, address: results[0].address, family: results[0].family, resolvedAddresses: results.map(({address,family}) => ({address,family})) };
+  if (!Array.isArray(results) || !results.length || results.length > LIMITS.dnsAnswers) throw new Error('DNS returned no addresses or exceeded the 16-address limit.');
+  if (results.some(item => !item || !isPublicAddress(item.address) || isIP(item.address) !== item.family)) throw new Error('All resolved IPv4 and IPv6 addresses must be public destinations.');
+  const sampling=sampleValidatedAddresses(results);
+  return { hostname, port:443, ...sampling.selectedAddresses[0],
+    resolvedAddresses:[...sampling.selectedAddresses,...sampling.unselectedAddresses],
+    validatedDnsAnswers:results.map(({address,family})=>({address,family})),sampling };
 }

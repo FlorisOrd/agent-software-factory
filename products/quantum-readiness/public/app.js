@@ -30,6 +30,27 @@ function titleCase(value) {
   return String(value).replace(/([a-z])([A-Z])/g, '$1 $2').replace(/[_-]/g, ' ').replace(/^./, (letter) => letter.toUpperCase());
 }
 
+function profileLabel(observation) {
+  const id = observation.profile?.id ?? observation.id;
+  return ({
+    'classical-tls13-v1': 'Classical TLS 1.3 offer',
+    'hybrid-mlkem-tls13-v1': 'Hybrid ML-KEM TLS 1.3 offer',
+  })[id] ?? id;
+}
+
+function outcomeLabel(status) {
+  return ({
+    negotiated: 'Validated TLS connection',
+    'bounded-negative': 'This bounded offer was not accepted',
+    'certificate-error': 'Certificate validation failed',
+    timeout: 'Time limit reached',
+    'tool-unsupported': 'Client could not configure this offer',
+    'limit-exceeded': 'Byte limit reached',
+    error: 'Connection failed',
+    inconclusive: 'Incomplete evidence',
+  })[status] ?? titleCase(status ?? 'unknown');
+}
+
 function renderValue(value) {
   if (Array.isArray(value)) {
     if (value.length === 0) return element('p', 'None recorded.', 'hint');
@@ -73,8 +94,24 @@ function reportSection(title, content, className = '') {
   return section;
 }
 
-function renderFinding(finding, observationAnchors) {
+function evidenceReferences(references, observationAnchors) {
+  const list = element('ul', undefined, 'value-list');
+  for (const reference of references ?? []) {
+    const item = element('li');
+    if (observationAnchors.has(reference)) {
+      const link = element('a', reference);
+      link.href = `#${observationAnchors.get(reference)}`;
+      link.addEventListener('click', () => { byId('technical-appendix').open = true; });
+      item.append(link);
+    } else item.textContent = describe(reference);
+    list.append(item);
+  }
+  return list;
+}
+
+function renderFinding(finding, observationAnchors, anchor) {
   const article = element('article', undefined, 'finding');
+  if (anchor) article.id = anchor;
   const heading = element('div', undefined, 'finding-heading');
   const category = element('p', titleCase(finding.category ?? 'Finding'), 'eyebrow');
   const title = element('h4', finding.title ?? finding.id ?? 'Finding');
@@ -94,23 +131,106 @@ function renderFinding(finding, observationAnchors) {
     detail.append(element('dt', label));
     const description = element('dd');
     if (key === 'observationRefs' && Array.isArray(finding[key])) {
-      const references = element('ul', undefined, 'value-list');
-      for (const reference of finding[key]) {
-        const item = element('li');
-        if (observationAnchors.has(reference)) {
-          const link = element('a', reference);
-          link.href = `#${observationAnchors.get(reference)}`;
-          link.addEventListener('click', () => { byId('technical-appendix').open = true; });
-          item.append(link);
-        } else item.textContent = describe(reference);
-        references.append(item);
-      }
-      description.append(references);
+      description.append(evidenceReferences(finding[key], observationAnchors));
     } else description.append(renderValue(finding[key]));
     detail.append(description);
   }
   article.append(detail);
   return article;
+}
+
+function addressList(addresses) {
+  if (!Array.isArray(addresses) || !addresses.length) return element('p', 'None recorded.', 'hint');
+  const list = element('ul', undefined, 'address-list');
+  for (const entry of addresses) list.append(element('li', `${entry.address} · IPv${entry.family}`));
+  return list;
+}
+
+function renderAddressCoverage(scope) {
+  const section = element('section', undefined, 'report-section');
+  section.id = 'address-coverage';
+  section.append(element('h3', 'Address coverage'));
+  const sampling = scope.sampling;
+  if (!sampling) {
+    section.append(element('p', 'Sampling metadata is unavailable. Review the original observations before drawing a coverage conclusion.'));
+    return section;
+  }
+  const metrics = element('dl', undefined, 'coverage-metrics');
+  for (const [id, label, value] of [
+    ['coverage-total', scope.demo ? 'Validated fixture addresses' : 'Validated DNS addresses', sampling.totalValidatedAddresses],
+    ['coverage-assessed', 'Addresses assessed', sampling.assessedCount],
+    ['coverage-unassessed', 'Addresses unassessed', sampling.unassessedCount],
+  ]) {
+    const metric = element('div');
+    metric.append(element('dt', label));
+    const count = element('dd', value ?? 'Unknown');
+    count.id = id;
+    metric.append(count);
+    metrics.append(metric);
+  }
+  section.append(metrics);
+  section.append(element('p', sampling.reason ?? 'Sampling reason was not recorded.', 'sampling-note'));
+  section.append(element('p', `At most ${sampling.maxAddresses ?? 'unknown'} addresses are selected. An address is assessed when a connection was attempted; its probe profiles may still be incomplete or unsuccessful. Unassessed addresses have no measured readiness conclusion.`, 'hint'));
+  if (scope.demo) section.append(element('p', 'Task-owned local fixture results; these addresses were not validated as public production destinations.', 'hint'));
+  const lists = element('div', undefined, 'address-selection');
+  for (const [label, addresses] of [
+    ['Exact assessed addresses', sampling.assessedAddresses],
+    ['Selected for probing', sampling.selectedAddresses],
+    ['Not selected by the sample', sampling.unselectedAddresses],
+    ['All validated addresses', scope.resolvedAddresses],
+  ]) {
+    const group = element('div');
+    group.append(element('h4', label), addressList(addresses));
+    lists.append(group);
+  }
+  section.append(lists);
+  return section;
+}
+
+function renderAddressEvidence(report, observationAnchors, findingAnchors) {
+  const section = element('section', undefined, 'report-section');
+  section.id = 'per-address-evidence';
+  section.append(element('h3', 'Per-address findings and evidence'));
+  const observations = new Map((report.observations ?? []).map((observation) => [observation.id, observation]));
+  for (const summary of report.addressSummaries ?? []) {
+    const card = element('article', undefined, 'address-card panel');
+    card.append(element('h4', `${summary.address} · IPv${summary.family}`));
+    card.append(element('p', summary.assessed ? 'Assessed · review each profile below' : 'Unassessed · no readiness conclusion', 'address-status'));
+    card.append(renderValue(summary.coverage));
+    const profiles = element('div', undefined, 'profile-grid');
+    for (const reference of summary.observationRefs ?? []) {
+      const observation = observations.get(reference);
+      if (!observation) continue;
+      const profile = element('div', undefined, 'profile-evidence');
+      profile.append(element('h5', profileLabel(observation)));
+      profile.append(renderValue({
+        outcome: outcomeLabel(observation.status),
+        connectedAddress: observation.connectedAddress ?? 'Not connected / unobserved',
+        keyEstablishmentGroup: observation.keyExchangeGroup ?? 'Not successfully measured',
+        certificateValidation: observation.certificateValidation?.status ?? 'Not completed',
+        measuredAt: observation.timestamp ?? 'Unknown',
+      }));
+      profile.append(evidenceReferences([reference], observationAnchors));
+      profiles.append(profile);
+    }
+    card.append(profiles);
+    const addressFindings = (report.findings ?? []).filter((finding) => (finding.observationRefs ?? []).some((reference) => summary.observationRefs?.includes(reference)));
+    if (addressFindings.length) {
+      card.append(element('h5', 'Findings and actions for this address'));
+      const list = element('ul', undefined, 'value-list');
+      for (const finding of addressFindings) {
+        const item = element('li');
+        const link = element('a', finding.title);
+        link.href = `#${findingAnchors.get(finding.id)}`;
+        item.append(link);
+        list.append(item);
+      }
+      card.append(list);
+    }
+    section.append(card);
+  }
+  if (!(report.addressSummaries ?? []).length) section.append(element('p', 'Per-address summaries were not recorded. Original observations remain available in the appendix.'));
+  return section;
 }
 
 function renderReport(report) {
@@ -121,22 +241,39 @@ function renderReport(report) {
   content.replaceChildren();
   const observations = Array.isArray(report.observations) ? report.observations : [];
   const observationAnchors = new Map(observations.map((observation, index) => [observation.id, `measured-observation-${index}`]));
+  const findings = Array.isArray(report.findings) ? report.findings : [];
+  const findingAnchors = new Map(findings.map((finding, index) => [finding.id, `finding-${index}`]));
   const scope = report.scope ?? {};
   const scopeCard = element('div', undefined, 'report-scope panel');
-  if (scope.demo) scopeCard.append(element('p', 'CONTROLLED DEMONSTRATION · task-owned endpoint', 'eyebrow'));
+  if (scope.demo) scopeCard.append(element('p', 'CONTROLLED DEMONSTRATION · task-owned endpoints', 'eyebrow'));
   scopeCard.append(element('h3', scope.hostname ?? 'Unknown hostname'));
-  const metadata = element('p', `${scope.address ?? 'Address not observed'} · port ${scope.port ?? 'unknown'} · ${report.createdAt ?? 'Time not recorded'}`, 'report-meta');
+  const metadata = element('p', `Port ${scope.port ?? 'unknown'} · ${report.createdAt ?? 'Time not recorded'}`, 'report-meta');
   scopeCard.append(metadata);
   scopeCard.append(element('p', `Provider attribution: ${scope.provider ?? 'unknown'}`, 'report-meta'));
   scopeCard.append(renderValue(report.summary));
   content.append(scopeCard);
+  content.append(renderAddressCoverage(scope));
   content.append(reportSection('Evidence coverage', report.coverage));
   content.append(reportSection('Assessment boundaries', scope.limitations));
   content.append(reportSection('Business context', report.business));
+  content.append(renderAddressEvidence(report, observationAnchors, findingAnchors));
+  const crossSection = element('section', undefined, 'report-section');
+  crossSection.id = 'cross-address-findings';
+  crossSection.append(element('h3', 'Observed differences between addresses'));
+  const crossFindings = Array.isArray(report.crossAddressFindings) ? report.crossAddressFindings : [];
+  const crossIds = new Set(crossFindings.map((finding) => finding.id));
+  if (crossFindings.length) {
+    for (const finding of crossFindings) crossSection.append(renderFinding(finding, observationAnchors, findingAnchors.get(finding.id)));
+  } else {
+    crossSection.append(element('p', (scope.sampling?.assessedCount ?? 0) < 2
+      ? 'Fewer than two addresses were assessed. Cross-address consistency cannot be established.'
+      : 'No cross-address inconsistency was identified in the measured profiles. This does not establish readiness of unassessed addresses, the origin or internal systems.'));
+  }
+  content.append(crossSection);
   const findingsSection = element('section', undefined, 'report-section');
   findingsSection.append(element('h3', 'Findings and proposed actions'));
-  if (Array.isArray(report.findings) && report.findings.length) {
-    for (const finding of report.findings) findingsSection.append(renderFinding(finding, observationAnchors));
+  if (findings.length) {
+    for (const finding of findings.filter((finding) => !crossIds.has(finding.id))) findingsSection.append(renderFinding(finding, observationAnchors, findingAnchors.get(finding.id)));
   } else {
     findingsSection.append(element('p', 'No findings were generated. Review evidence coverage and incomplete observations; this is not a clean bill of health.'));
   }
@@ -153,8 +290,8 @@ function renderReport(report) {
   content.append(planSection);
   const appendix = element('details', undefined, 'evidence-appendix');
   appendix.id = 'technical-appendix';
-  appendix.append(element('summary', 'Technical evidence appendix — original observations and rule version'));
-  appendix.append(element('p', 'The JSON export contains the complete report. These observations preserve the measured data without inferring untested systems.', 'hint'));
+  appendix.append(element('summary', 'Technical evidence appendix — original observations, sampling and rule version'));
+  appendix.append(element('p', 'Both exports preserve the complete original report, including every observation, client profile and sampling decision. These observations do not infer untested systems.', 'hint'));
   for (const [index, observation] of observations.entries()) {
     const measured = element('section', undefined, 'original-observation');
     measured.id = `measured-observation-${index}`;
@@ -211,7 +348,7 @@ form.addEventListener('submit', async (event) => {
   assessButton.disabled = true;
   form.setAttribute('aria-busy', 'true');
   byId('report').hidden = true;
-  byId('request-status').textContent = 'Measuring bounded TLS probe profiles. The report will distinguish successful, negative, and incomplete observations…';
+  byId('request-status').textContent = 'Measuring up to 3 selected addresses with at most 6 sequential TLS connections and a 30-second assessment budget. Incomplete profiles will remain explicit…';
   try {
     const response = await fetch('/api/assess', {
       method: 'POST',
@@ -250,6 +387,9 @@ async function initialize() {
         'hybrid.qr.test': 'Hybrid-capable TLS endpoint',
         'invalid.qr.test': 'Certificate-validation failure',
         'timeout.qr.test': 'Bounded timeout',
+        'mixed.qr.test': 'Two addresses with different hybrid observations',
+        'consistent.qr.test': 'Two addresses with consistent hybrid observations',
+        'sampled.qr.test': 'Four fixture addresses, three selected',
       };
       for (const hostname of configuration.targets ?? []) {
         const option = element('option', `${labels[hostname] ?? 'Controlled fixture'} · ${hostname}`);

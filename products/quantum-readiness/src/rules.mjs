@@ -1,4 +1,4 @@
-export const RULESET = Object.freeze({id:'qr-tls-posture', version:'1.0.0', reviewedOn:'2026-09-06'});
+export const RULESET = Object.freeze({id:'qr-tls-posture', version:'1.1.0', reviewedOn:'2026-09-06'});
 const sources = {
   quantum:{title:'NIST: What is post-quantum cryptography?',url:'https://www.nist.gov/cybersecurity-and-privacy/what-post-quantum-cryptography',reviewedOn:RULESET.reviewedOn},
   hybrid:{title:'IETF RFC 10024: Post-quantum traditional hybrid ECDHE-MLKEM for TLS 1.3',url:'https://datatracker.ietf.org/doc/rfc10024/',reviewedOn:RULESET.reviewedOn},
@@ -10,10 +10,10 @@ const classicalGroups = new Set(['X25519','X448','prime256v1','secp256r1','P-256
 const hybridGroups = new Set(['X25519MLKEM768','SecP256r1MLKEM768','SecP384r1MLKEM1024']);
 
 export const SCOPE_LIMITATIONS = [
-  'This is a point-in-time assessment of two TLS 1.3 client profiles at one pinned address on the named endpoint. Other addresses, TLS versions and client offers are untested.',
+  'This is a point-in-time assessment of two TLS 1.3 client profiles at up to three pinned addresses on the named endpoint. Unselected addresses, other DNS answers, TLS versions and client offers are untested; selected addresses can still have incomplete evidence.',
   'The exposed endpoint may be a provider edge. Provider identity and the origin server remain unknown.',
   'Internal traffic, databases, backups, source code, VPNs, signing infrastructure and other company assets are unassessed.',
-  'A negotiated hybrid connection does not establish post-quantum authentication or whole-company security. Certificate signing and the live handshake signature are different; the live signature algorithm is not exposed by this backend.',
+  'A negotiated hybrid connection does not establish readiness of every address, the origin, internal systems, post-quantum authentication or whole-company security. Certificate signing and the live handshake signature are different; the live signature algorithm is not exposed by this backend.',
   'No score, certification, compliance determination, compromise claim or date of quantum-computer capability is inferred. No system was modified.',
   'A declaration of permission is a private-pilot workflow control, not independent proof of ownership. Public release requires separate authorization and abuse-prevention design.'
 ];
@@ -78,11 +78,56 @@ export function interpret(observations,business) {
   return findings;
 }
 
+export function interpretAcrossAddresses(observations,addressSummaries) {
+  if(addressSummaries.length<2)return [];
+  const findings=[];
+  const profileIds=['classical-tls13-v1','hybrid-mlkem-tls13-v1'];
+  const verified=o=>o?.status==='negotiated' && o.certificateValidation.status==='verified';
+  const rows=profileId=>addressSummaries.map(address=>({address:address.address,obs:observations.find(o=>o.resolvedAddress===address.address && (o.profile?.id??o.id)===profileId)}));
+  const add=(id,rows,fields)=>findings.push(finding(id,rows.flatMap(row=>row.obs?[row.obs]:[]),{
+    category:'Observed deployment inconsistency / incomplete coverage',priority:'Validate deployment consistency',
+    confidence:'Observed differences across the listed addresses, client offers and times only; cause and unmeasured capability remain unknown.',
+    priorityRationale:'Different observed results limit how representative one successful connection is of the authorized hostname.',
+    action:'Ask the endpoint/provider owner to compare the assessed edge configurations and resolve coverage gaps in authorized staging. Repeat these same offers on every listed address and review the unassessed addresses under a separately bounded assessment.',
+    validation:'Compare exact connected addresses, profile offers, measured groups and certificate validation after an authorized staging change; do not infer absent capability from unsuccessful measurements.',
+    ...fields
+  }));
+  const hybrid=rows(profileIds[1]);
+  const hybridMeasured=hybrid.filter(row=>verified(row.obs) && row.obs.keyExchangeGroup==='X25519MLKEM768');
+  if(hybridMeasured.length && hybridMeasured.length<hybrid.length)add('cross-address-hybrid',hybrid,{
+    title:'Observed deployment inconsistency / incomplete hybrid coverage',
+    observation:hybrid.map(({address,obs})=>`${address}: ${verified(obs)?obs.keyExchangeGroup:obs?.status??'not-recorded'}`).join('; '),
+    interpretation:'Hybrid key establishment was measured on some selected addresses but not successfully measured on others with the same offer. This is observed deployment inconsistency / incomplete coverage, not proof that PQ support is absent on those other addresses. A bounded-negative offer cannot establish absence; one success does not establish readiness of every address, the origin or internal systems, post-quantum authentication or whole-company safety.',sources:[sources.hybrid,sources.migration]
+  });
+  const classical=rows(profileIds[0]);
+  const normalizedGroup=group=>['P-256','secp256r1','prime256v1'].includes(group)?'P-256':['P-384','secp384r1'].includes(group)?'P-384':group;
+  if(new Set(classical.filter(row=>verified(row.obs) && classicalGroups.has(row.obs.keyExchangeGroup)).map(row=>normalizedGroup(row.obs.keyExchangeGroup))).size>1)add('cross-address-classical-group',classical,{
+    title:'Different classical groups observed across addresses',
+    observation:classical.map(({address,obs})=>`${address}: ${verified(obs)?obs.keyExchangeGroup:obs?.status??'not-recorded'}`).join('; '),
+    interpretation:'The same classical client offer negotiated different groups on assessed addresses. This is an observed deployment inconsistency; it does not identify its cause or establish missing hybrid support.',sources:[sources.tls,sources.migration]
+  });
+  for(const profileId of profileIds) {
+    const evidence=rows(profileId);
+    if(new Set(evidence.map(row=>row.obs?.certificateValidation.status??'not-completed')).size>1)add(`cross-address-certificate-${profileId}`,evidence,{
+      title:'Certificate-validation evidence differs across addresses',
+      observation:evidence.map(({address,obs})=>`${address} / ${profileId}: ${obs?.certificateValidation.status??'not-completed'}`).join('; '),
+      interpretation:'The same offer did not produce equivalent certificate-validation evidence across selected addresses. Failed validation and validation that never completed are distinct outcomes; a network or handshake failure does not prove a bad certificate. Investigate with normal trust and hostname checks enabled.'
+    });
+    const evidenceState=obs=>!obs?'not-recorded':`${obs.status}; group ${classicalGroups.has(obs.keyExchangeGroup)||hybridGroups.has(obs.keyExchangeGroup)?'classified':'unclassified'}; certificate signature ${obs.certificate?.signatureAlgorithm?'recorded':'unavailable'}; authentication key ${['rsa','rsa-pss','ec','ed25519','ed448'].includes(obs.certificate?.publicKeyType)?'classified':'unclassified'}`;
+    if(new Set(evidence.map(row=>evidenceState(row.obs))).size>1)add(`cross-address-coverage-${profileId}`,evidence,{
+      title:'Profile evidence coverage differs across addresses',
+      observation:evidence.map(({address,obs})=>`${address} / ${profileId}: ${evidenceState(obs)}`).join('; '),
+      interpretation:'This offer produced different observation outcomes across selected addresses. Treat this as observed deployment inconsistency / incomplete coverage. Timeouts, tool limits and errors are evidence gaps, not proof that an unmeasured capability is absent.'
+    });
+  }
+  return findings;
+}
+
 export const PLAN=[
   'Confirm assessment scope, authority, data sensitivity and required confidentiality lifetime; unknown answers need owner confirmation.',
   'Identify the actual endpoint/provider, TLS library and certificate/CA owners; verify their current supported migration options.',
   'Pilot supported standardized hybrid ML-KEM key establishment in authorized staging; maintain a separate authentication/signature migration workstream.',
   'Measure representative client compatibility, handshake performance and failure rates; define acceptance and rollback thresholds with the service owner.',
   'Deploy only under separate explicit authorization after the staging criteria are met. This tool does not make changes.',
-  'Rescan the same authorized endpoint with the same offers, compare measured evidence, and extend inventory only under separately confirmed scope.'
+  'Rescan the same authorized hostname with the same offers, compare per-address groups, certificate validation and coverage; agree a bounded follow-up for unassessed addresses and extend inventory only under separately confirmed scope.'
 ];
