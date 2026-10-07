@@ -51,3 +51,6 @@ local interface for an explicitly authorized HTTPS endpoint, evidence-backed
 findings, and a proposed migration plan. Its controlled demonstration uses only
 task-owned local TLS endpoints. It is separate from the completed Factory setup
 and does not grant permission to scan customers, deploy, or merge changes.
+
+
+For preserved state, history and restart instructions, read [RESUME.md](RESUME.md).

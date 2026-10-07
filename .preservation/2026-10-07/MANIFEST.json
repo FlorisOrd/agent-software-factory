@@ -1,0 +1,97 @@
+{
+  "group": "agent-software-factory",
+  "destination": "https://github.com/FlorisOrd/agent-software-factory",
+  "branch": "preservation/2026-10-07",
+  "sources": [
+    "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory"
+  ],
+  "payload_files": [
+    {
+      "relative": "DEPENDENCIES.json",
+      "bytes": 43926,
+      "sha256": "ff32f2ab6727b0f681df12c2ae4a5bea37b9ea33937a0305c67364c87f9abcdc"
+    },
+    {
+      "relative": "evidence/asf-product.log",
+      "bytes": 5298,
+      "sha256": "9e34b988d4a89b72c4a6d463f0ba80d1c9d8b43253c8e0ea1169d8a83c80fc26"
+    },
+    {
+      "relative": "evidence/asf-workflow.log",
+      "bytes": 216,
+      "sha256": "b516f631cd302f1e12ad8c9db7558c36e3198c369a49bd31a2c167d7c15410e8"
+    },
+    {
+      "relative": "evidence/checks.json",
+      "bytes": 425,
+      "sha256": "ab032a496394c49818f25420356a27fdf83a8606f6ab433cdbe217a1b902a9b5"
+    },
+    {
+      "relative": "evidence/npm-1.log",
+      "bytes": 238,
+      "sha256": "b8b8bb9fa33db0a9b9fb877b3bbc5ee0ab771a67e120cfa1f3955e73e14e38d3"
+    },
+    {
+      "relative": "exclusions.json",
+      "bytes": 36067,
+      "sha256": "df1a51c3b76f6cd80587a147b99221bd49be9c0cde355f45215522733d79d521"
+    },
+    {
+      "relative": "files.json",
+      "bytes": 64645,
+      "sha256": "99e932b0044fe7fb3a6c3a47a070f768179a26f765651965a72c3978423a8c3e"
+    },
+    {
+      "relative": "git/r001-metadata.zip",
+      "bytes": 5427,
+      "sha256": "86de47a1ddd75aea3cab4cfb828f3e1c74c3b27f09da19a8ecd2ec3afa598876"
+    },
+    {
+      "relative": "git/r001.json",
+      "bytes": 41759,
+      "sha256": "aa72c9ee20ae74b97c8c28903787c58dc5e174584234cc6bc83c5613687b4b69"
+    },
+    {
+      "relative": "git/r001.pack",
+      "bytes": 98238,
+      "sha256": "60c43cc45810fe9748ceb64ce9be63cad3e8755e3db45c1a619479ee1b52cfeb"
+    },
+    {
+      "relative": "README.md",
+      "bytes": 2621,
+      "sha256": "f349e0e9488b1b9b18769d6934f7108c29bca71fafa16d5561241fcfefd0c832"
+    },
+    {
+      "relative": "recover.py",
+      "bytes": 4267,
+      "sha256": "f2b8ac44943eb40f0fe00a45169918670a84f9e84b6d99d2f0754eb8841a7f3e"
+    },
+    {
+      "relative": "repositories.json",
+      "bytes": 240,
+      "sha256": "668dc72f6292da2758f06aff5c5b793f35ec795e298cd59c7599d8cca46638b0"
+    },
+    {
+      "relative": "working-files.zip",
+      "bytes": 3724347,
+      "sha256": "2880ee0fce9a6c08dd9899f4bd22253bcde31ddb510ab7af172ccc4b0e9792d9"
+    }
+  ],
+  "original_material_count": 133,
+  "original_material_bytes": 5710837,
+  "git_repositories": [
+    {
+      "id": "r001",
+      "root": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory",
+      "objects": 107,
+      "pack_bytes": 98238,
+      "head": [
+        "e8fab07547c6ccaaae9b83be350332caf47e1a6b"
+      ]
+    }
+  ],
+  "publication": "NOT UPLOADED; approval review pending",
+  "verification": "local prepare only; independent remote clone not yet possible",
+  "source_base": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT",
+  "revision_note": "Finalization adds symbolic-ref mappings, verified dependency restoration evidence, recovery helper, and the one differing original ASF npm metadata file. All prior original snapshots and object packs unchanged."
+}

@@ -1,0 +1,978 @@
+{
+  "head": {
+    "exit": 0,
+    "output": [
+      "e8fab07547c6ccaaae9b83be350332caf47e1a6b"
+    ]
+  },
+  "untracked": {
+    "exit": 0,
+    "output": []
+  },
+  "project": "agent-software-factory",
+  "unreachable": {
+    "exit": 0,
+    "output": [
+      "unreachable blob 3248a943e3482a04f691309f344923b99811b8d9",
+      "unreachable tree 5235bd229a18530ae3cab318bf0d3c3976ce6187",
+      "unreachable tree 5366877e19de7ca6aa73df4d316e17c8fcf65f34",
+      "unreachable commit 64b74afdb31338d0dcefbb35d353b9dbea3fdd9d",
+      "unreachable commit 6de9ac78037ab8c911f9a9bc31aa8d3b1e4c1d53",
+      "unreachable tree 86a6184497d315a6b6b3fb32ec918d3d5ea1a2a5",
+      "unreachable commit bfd0ff4e0f7551b4e15e455ba3708aebff363efa"
+    ]
+  },
+  "reflogs": {
+    "exit": 0,
+    "output": [
+      "e8fab07547c6ccaaae9b83be350332caf47e1a6b commit: Add bounded multi-address quantum-readiness coverage",
+      "e8fab07547c6ccaaae9b83be350332caf47e1a6b commit: Add bounded multi-address quantum-readiness coverage",
+      "dbdee018e5a128b08b413f4d1a71128256a58aec branch: Created from origin/main",
+      "dbdee018e5a128b08b413f4d1a71128256a58aec checkout: moving from codex/qr-mvp-01 to codex/qr-mvp-02",
+      "dbdee018e5a128b08b413f4d1a71128256a58aec fetch origin main: fast-forward",
+      "cbbfc11306db1f185147356022ea12d3b9aa47e3 commit: Retain controlled browser and TLS evidence in CI",
+      "cbbfc11306db1f185147356022ea12d3b9aa47e3 commit: Retain controlled browser and TLS evidence in CI",
+      "23433806a1d6c09ccb9c3eabf7431e1f5f6253cf commit: Add controlled website quantum-readiness pilot",
+      "23433806a1d6c09ccb9c3eabf7431e1f5f6253cf commit: Add controlled website quantum-readiness pilot",
+      "223850dd8f909fcddef52dcc2bb5aff865f4472f branch: Created from origin/main",
+      "223850dd8f909fcddef52dcc2bb5aff865f4472f checkout: moving from codex/asf-mvp-01-native-delivery to codex/qr-mvp-01",
+      "223850dd8f909fcddef52dcc2bb5aff865f4472f fetch origin main: fast-forward",
+      "53f7bbf7a6ae9c103b8d4088354b377bd62745c1 commit: Clarify owner handoff and contain workflow file reads",
+      "53f7bbf7a6ae9c103b8d4088354b377bd62745c1 commit: Clarify owner handoff and contain workflow file reads",
+      "8fa7dd77e9a9ae24898dbee1fd2459674157ad43 commit: Configure the native Factory delivery workflow",
+      "8fa7dd77e9a9ae24898dbee1fd2459674157ad43 commit: Configure the native Factory delivery workflow",
+      "fd5295a1b05c3559b3eaeb7cf9c7c8ed3e6483da branch: Created from HEAD",
+      "fd5295a1b05c3559b3eaeb7cf9c7c8ed3e6483da checkout: moving from main to codex/asf-mvp-01-native-delivery",
+      "fd5295a1b05c3559b3eaeb7cf9c7c8ed3e6483da clone: from https://github.com/FlorisOrd/agent-software-factory.git",
+      "fd5295a1b05c3559b3eaeb7cf9c7c8ed3e6483da clone: from https://github.com/FlorisOrd/agent-software-factory.git"
+    ]
+  },
+  "submodules": {
+    "exit": 0,
+    "output": []
+  },
+  "stashes": {
+    "exit": 0,
+    "output": []
+  },
+  "status": {
+    "exit": 0,
+    "output": [
+      "## codex/qr-mvp-02"
+    ]
+  },
+  "remotes": {
+    "exit": 0,
+    "output": [
+      "origin\thttps://github.com/FlorisOrd/agent-software-factory.git (fetch)",
+      "origin\thttps://github.com/FlorisOrd/agent-software-factory.git (push)"
+    ]
+  },
+  "root": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory",
+  "tree": {
+    "exit": 0,
+    "output": [
+      "3bef42af1bde25afb715ff69efbe06117b599ea5"
+    ]
+  },
+  "ignored": {
+    "exit": 0,
+    "output": [
+      ".delivery/qr-mvp-01/builder-browser-final.txt",
+      ".delivery/qr-mvp-01/builder-completion.md",
+      ".delivery/qr-mvp-01/builder-failures.md",
+      ".delivery/qr-mvp-01/builder-static-final.txt",
+      ".delivery/qr-mvp-01/builder-tests-final.txt",
+      ".delivery/qr-mvp-01/builder-tests-first.txt",
+      ".delivery/qr-mvp-01/builder-tests-recheck.txt",
+      ".delivery/qr-mvp-01/builder-ui-browser-initial.txt",
+      ".delivery/qr-mvp-01/builder-ui-browser-recheck.txt",
+      ".delivery/qr-mvp-01/builder-ui-result.md",
+      ".delivery/qr-mvp-01/ci-evidence.zip",
+      ".delivery/qr-mvp-01/ci-factory.log",
+      ".delivery/qr-mvp-01/ci-final-factory.log",
+      ".delivery/qr-mvp-01/ci-final-product.log",
+      ".delivery/qr-mvp-01/ci-product.log",
+      ".delivery/qr-mvp-01/lead-hybrid-report.html",
+      ".delivery/qr-mvp-01/lead-hybrid-report.json",
+      ".delivery/qr-mvp-01/lead-walkthrough.md",
+      ".delivery/qr-mvp-01/owner-report.md",
+      ".delivery/qr-mvp-01/verifier-browser-check.json",
+      ".delivery/qr-mvp-01/verifier-browser-demo.png",
+      ".delivery/qr-mvp-01/verifier-browser-mobile.png",
+      ".delivery/qr-mvp-01/verifier-browser-report.png",
+      ".delivery/qr-mvp-01/verifier-browser.txt",
+      ".delivery/qr-mvp-01/verifier-ci-browser-demo.png",
+      ".delivery/qr-mvp-01/verifier-ci-browser-mobile.png",
+      ".delivery/qr-mvp-01/verifier-ci-browser-report.png",
+      ".delivery/qr-mvp-01/verifier-command-issues.txt",
+      ".delivery/qr-mvp-01/verifier-completion-initial.md",
+      ".delivery/qr-mvp-01/verifier-completion.md",
+      ".delivery/qr-mvp-01/verifier-controlled-reports.json",
+      ".delivery/qr-mvp-01/verifier-final-completion.md",
+      ".delivery/qr-mvp-01/verifier-recheck-browser-check.json",
+      ".delivery/qr-mvp-01/verifier-recheck-browser-demo.png",
+      ".delivery/qr-mvp-01/verifier-recheck-browser-mobile.png",
+      ".delivery/qr-mvp-01/verifier-recheck-browser-report.png",
+      ".delivery/qr-mvp-01/verifier-recheck-browser.txt",
+      ".delivery/qr-mvp-01/verifier-recheck-ci.txt",
+      ".delivery/qr-mvp-01/verifier-recheck-controlled-reports.json",
+      ".delivery/qr-mvp-01/verifier-recheck-scope-first.txt",
+      ".delivery/qr-mvp-01/verifier-recheck-scope.txt",
+      ".delivery/qr-mvp-01/verifier-recheck-static.txt",
+      ".delivery/qr-mvp-01/verifier-recheck-targeted.txt",
+      ".delivery/qr-mvp-01/verifier-recheck-tests.txt",
+      ".delivery/qr-mvp-01/verifier-recheck.md",
+      ".delivery/qr-mvp-01/verifier-review-initial.md",
+      ".delivery/qr-mvp-01/verifier-review.md",
+      ".delivery/qr-mvp-01/verifier-sha256.txt",
+      ".delivery/qr-mvp-01/verifier-static.txt",
+      ".delivery/qr-mvp-01/verifier-targeted-source.txt",
+      ".delivery/qr-mvp-01/verifier-targeted.txt",
+      ".delivery/qr-mvp-01/verifier-tests.txt",
+      ".delivery/qr-mvp-02/builder-factory.log",
+      ".delivery/qr-mvp-02/builder-original-result.md",
+      ".delivery/qr-mvp-02/ci-evidence.zip",
+      ".delivery/qr-mvp-02/ci-factory.log",
+      ".delivery/qr-mvp-02/ci-product.log",
+      ".delivery/qr-mvp-02/lead-demo.json",
+      ".delivery/qr-mvp-02/lead-demo.mjs",
+      ".delivery/qr-mvp-02/lead-final-evidence.md",
+      ".delivery/qr-mvp-02/lead-mixed-report.json",
+      ".delivery/qr-mvp-02/lead-sampled-report.html",
+      ".delivery/qr-mvp-02/lead-sampled-report.json",
+      ".delivery/qr-mvp-02/lead-starting-tests.log",
+      ".delivery/qr-mvp-02/verifier-artifacts/browser-check.json",
+      ".delivery/qr-mvp-02/verifier-artifacts/browser-demo.png",
+      ".delivery/qr-mvp-02/verifier-artifacts/browser-mobile.png",
+      ".delivery/qr-mvp-02/verifier-artifacts/browser-multi-coverage.png",
+      ".delivery/qr-mvp-02/verifier-artifacts/browser-multi-evidence.png",
+      ".delivery/qr-mvp-02/verifier-artifacts/browser-multi-mobile.png",
+      ".delivery/qr-mvp-02/verifier-artifacts/browser-report.png",
+      ".delivery/qr-mvp-02/verifier-artifacts/browser-sampled-coverage.png",
+      ".delivery/qr-mvp-02/verifier-artifacts/controlled-multi-address-reports.json",
+      ".delivery/qr-mvp-02/verifier-artifacts/controlled-reports.json",
+      ".delivery/qr-mvp-02/verifier-artifacts/extra-controlled-evidence.json",
+      ".delivery/qr-mvp-02/verifier-browser.log",
+      ".delivery/qr-mvp-02/verifier-extra-tests.log",
+      ".delivery/qr-mvp-02/verifier-extra.test.mjs",
+      ".delivery/qr-mvp-02/verifier-factory.log",
+      ".delivery/qr-mvp-02/verifier-logic-review.md",
+      ".delivery/qr-mvp-02/verifier-manifest.json",
+      ".delivery/qr-mvp-02/verifier-product-tests.log",
+      ".delivery/qr-mvp-02/verifier-review.md",
+      ".delivery/qr-mvp-02/verifier-revision-syntax.json",
+      "products/quantum-readiness/.artifacts/browser-check.json",
+      "products/quantum-readiness/.artifacts/browser-demo.png",
+      "products/quantum-readiness/.artifacts/browser-mobile.png",
+      "products/quantum-readiness/.artifacts/browser-multi-coverage.png",
+      "products/quantum-readiness/.artifacts/browser-multi-evidence.png",
+      "products/quantum-readiness/.artifacts/browser-multi-mobile.png",
+      "products/quantum-readiness/.artifacts/browser-report.png",
+      "products/quantum-readiness/.artifacts/browser-sampled-coverage.png",
+      "products/quantum-readiness/.artifacts/builder-browser-first.log",
+      "products/quantum-readiness/.artifacts/builder-final-tests.log",
+      "products/quantum-readiness/.artifacts/builder-first-tests.log",
+      "products/quantum-readiness/.artifacts/builder-second-tests.log",
+      "products/quantum-readiness/.artifacts/controlled-multi-address-reports.json",
+      "products/quantum-readiness/.artifacts/controlled-reports.json",
+      "products/quantum-readiness/node_modules/.bin/playwright",
+      "products/quantum-readiness/node_modules/.bin/playwright-core",
+      "products/quantum-readiness/node_modules/.bin/playwright-core.cmd",
+      "products/quantum-readiness/node_modules/.bin/playwright-core.ps1",
+      "products/quantum-readiness/node_modules/.bin/playwright.cmd",
+      "products/quantum-readiness/node_modules/.bin/playwright.ps1",
+      "products/quantum-readiness/node_modules/.package-lock.json",
+      "products/quantum-readiness/node_modules/playwright-core/LICENSE",
+      "products/quantum-readiness/node_modules/playwright-core/NOTICE",
+      "products/quantum-readiness/node_modules/playwright-core/README.md",
+      "products/quantum-readiness/node_modules/playwright-core/ThirdPartyNotices.txt",
+      "products/quantum-readiness/node_modules/playwright-core/bin/install_media_pack.ps1",
+      "products/quantum-readiness/node_modules/playwright-core/bin/install_webkit_wsl.ps1",
+      "products/quantum-readiness/node_modules/playwright-core/bin/reinstall_chrome_beta_linux.sh",
+      "products/quantum-readiness/node_modules/playwright-core/bin/reinstall_chrome_beta_mac.sh",
+      "products/quantum-readiness/node_modules/playwright-core/bin/reinstall_chrome_beta_win.ps1",
+      "products/quantum-readiness/node_modules/playwright-core/bin/reinstall_chrome_stable_linux.sh",
+      "products/quantum-readiness/node_modules/playwright-core/bin/reinstall_chrome_stable_mac.sh",
+      "products/quantum-readiness/node_modules/playwright-core/bin/reinstall_chrome_stable_win.ps1",
+      "products/quantum-readiness/node_modules/playwright-core/bin/reinstall_msedge_beta_linux.sh",
+      "products/quantum-readiness/node_modules/playwright-core/bin/reinstall_msedge_beta_mac.sh",
+      "products/quantum-readiness/node_modules/playwright-core/bin/reinstall_msedge_beta_win.ps1",
+      "products/quantum-readiness/node_modules/playwright-core/bin/reinstall_msedge_dev_linux.sh",
+      "products/quantum-readiness/node_modules/playwright-core/bin/reinstall_msedge_dev_mac.sh",
+      "products/quantum-readiness/node_modules/playwright-core/bin/reinstall_msedge_dev_win.ps1",
+      "products/quantum-readiness/node_modules/playwright-core/bin/reinstall_msedge_stable_linux.sh",
+      "products/quantum-readiness/node_modules/playwright-core/bin/reinstall_msedge_stable_mac.sh",
+      "products/quantum-readiness/node_modules/playwright-core/bin/reinstall_msedge_stable_win.ps1",
+      "products/quantum-readiness/node_modules/playwright-core/browsers.json",
+      "products/quantum-readiness/node_modules/playwright-core/cli.js",
+      "products/quantum-readiness/node_modules/playwright-core/index.d.ts",
+      "products/quantum-readiness/node_modules/playwright-core/index.js",
+      "products/quantum-readiness/node_modules/playwright-core/index.mjs",
+      "products/quantum-readiness/node_modules/playwright-core/lib/bootstrap.js",
+      "products/quantum-readiness/node_modules/playwright-core/lib/coreBundle.js",
+      "products/quantum-readiness/node_modules/playwright-core/lib/entry/cliDaemon.js",
+      "products/quantum-readiness/node_modules/playwright-core/lib/entry/dashboardApp.js",
+      "products/quantum-readiness/node_modules/playwright-core/lib/entry/mcp.js",
+      "products/quantum-readiness/node_modules/playwright-core/lib/entry/oopBrowserDownload.js",
+      "products/quantum-readiness/node_modules/playwright-core/lib/package.js",
+      "products/quantum-readiness/node_modules/playwright-core/lib/server/chromium/appIcon.png",
+      "products/quantum-readiness/node_modules/playwright-core/lib/server/electron/loader.js",
+      "products/quantum-readiness/node_modules/playwright-core/lib/serverRegistry.js",
+      "products/quantum-readiness/node_modules/playwright-core/lib/serverRegistry.js.LICENSE",
+      "products/quantum-readiness/node_modules/playwright-core/lib/tools/cli-client/channelSessions.js",
+      "products/quantum-readiness/node_modules/playwright-core/lib/tools/cli-client/cli.js",
+      "products/quantum-readiness/node_modules/playwright-core/lib/tools/cli-client/help.json",
+      "products/quantum-readiness/node_modules/playwright-core/lib/tools/cli-client/minimist.js",
+      "products/quantum-readiness/node_modules/playwright-core/lib/tools/cli-client/output.js",
+      "products/quantum-readiness/node_modules/playwright-core/lib/tools/cli-client/program.js",
+      "products/quantum-readiness/node_modules/playwright-core/lib/tools/cli-client/registry.js",
+      "products/quantum-readiness/node_modules/playwright-core/lib/tools/cli-client/session.js",
+      "products/quantum-readiness/node_modules/playwright-core/lib/tools/dashboard/appIcon.png",
+      "products/quantum-readiness/node_modules/playwright-core/lib/tools/skills/playwright-cli/SKILL.md",
+      "products/quantum-readiness/node_modules/playwright-core/lib/tools/skills/playwright-cli/references/element-attributes.md",
+      "products/quantum-readiness/node_modules/playwright-core/lib/tools/skills/playwright-cli/references/playwright-tests.md",
+      "products/quantum-readiness/node_modules/playwright-core/lib/tools/skills/playwright-cli/references/request-mocking.md",
+      "products/quantum-readiness/node_modules/playwright-core/lib/tools/skills/playwright-cli/references/running-code.md",
+      "products/quantum-readiness/node_modules/playwright-core/lib/tools/skills/playwright-cli/references/session-management.md",
+      "products/quantum-readiness/node_modules/playwright-core/lib/tools/skills/playwright-cli/references/storage-state.md",
+      "products/quantum-readiness/node_modules/playwright-core/lib/tools/skills/playwright-cli/references/test-generation.md",
+      "products/quantum-readiness/node_modules/playwright-core/lib/tools/skills/playwright-cli/references/tracing.md",
+      "products/quantum-readiness/node_modules/playwright-core/lib/tools/skills/playwright-cli/references/video-recording.md",
+      "products/quantum-readiness/node_modules/playwright-core/lib/tools/skills/playwright-component-testing/SKILL.md",
+      "products/quantum-readiness/node_modules/playwright-core/lib/tools/skills/playwright-component-testing/references/gallery-spec.md",
+      "products/quantum-readiness/node_modules/playwright-core/lib/tools/skills/playwright-component-testing/references/migration.md",
+      "products/quantum-readiness/node_modules/playwright-core/lib/tools/skills/playwright-component-testing/references/react.md",
+      "products/quantum-readiness/node_modules/playwright-core/lib/tools/skills/playwright-component-testing/references/vue.md",
+      "products/quantum-readiness/node_modules/playwright-core/lib/tools/skills/playwright-trace/SKILL.md",
+      "products/quantum-readiness/node_modules/playwright-core/lib/tools/utils/extension.js",
+      "products/quantum-readiness/node_modules/playwright-core/lib/tools/utils/socketConnection.js",
+      "products/quantum-readiness/node_modules/playwright-core/lib/utilsBundle.js",
+      "products/quantum-readiness/node_modules/playwright-core/lib/utilsBundle.js.LICENSE",
+      "products/quantum-readiness/node_modules/playwright-core/lib/vite/dashboard/assets/codicon-DCmgc-ay.ttf",
+      "products/quantum-readiness/node_modules/playwright-core/lib/vite/dashboard/assets/firefox-1bWoP6pv.svg",
+      "products/quantum-readiness/node_modules/playwright-core/lib/vite/dashboard/assets/firefox-beta-k3eOH_eK.svg",
+      "products/quantum-readiness/node_modules/playwright-core/lib/vite/dashboard/assets/firefox-nightly-Cp5nfeDT.svg",
+      "products/quantum-readiness/node_modules/playwright-core/lib/vite/dashboard/assets/index-CyWAfh-p.js",
+      "products/quantum-readiness/node_modules/playwright-core/lib/vite/dashboard/assets/index-DhC616m4.css",
+      "products/quantum-readiness/node_modules/playwright-core/lib/vite/dashboard/assets/safari-na3_-uQk.svg",
+      "products/quantum-readiness/node_modules/playwright-core/lib/vite/dashboard/index.html",
+      "products/quantum-readiness/node_modules/playwright-core/lib/vite/dashboard/playwright-logo.svg",
+      "products/quantum-readiness/node_modules/playwright-core/lib/vite/htmlReport/index.html",
+      "products/quantum-readiness/node_modules/playwright-core/lib/vite/htmlReport/report.css",
+      "products/quantum-readiness/node_modules/playwright-core/lib/vite/htmlReport/report.js",
+      "products/quantum-readiness/node_modules/playwright-core/lib/vite/recorder/assets/codeMirrorModule--QdMvsKi.css",
+      "products/quantum-readiness/node_modules/playwright-core/lib/vite/recorder/assets/codeMirrorModule-CwYYHbcZ.js",
+      "products/quantum-readiness/node_modules/playwright-core/lib/vite/recorder/assets/codicon-DCmgc-ay.ttf",
+      "products/quantum-readiness/node_modules/playwright-core/lib/vite/recorder/assets/index-DYjdXIbE.js",
+      "products/quantum-readiness/node_modules/playwright-core/lib/vite/recorder/assets/index-l_lX622x.css",
+      "products/quantum-readiness/node_modules/playwright-core/lib/vite/recorder/index.html",
+      "products/quantum-readiness/node_modules/playwright-core/lib/vite/recorder/playwright-logo.svg",
+      "products/quantum-readiness/node_modules/playwright-core/lib/vite/traceViewer/assets/codeMirrorModule-rXmQmLUY.js",
+      "products/quantum-readiness/node_modules/playwright-core/lib/vite/traceViewer/assets/defaultSettingsView-B-dXF5JN.js",
+      "products/quantum-readiness/node_modules/playwright-core/lib/vite/traceViewer/assets/urlMatch-L3liM589.js",
+      "products/quantum-readiness/node_modules/playwright-core/lib/vite/traceViewer/assets/xtermModule-BuZfJS5v.js",
+      "products/quantum-readiness/node_modules/playwright-core/lib/vite/traceViewer/codeMirrorModule.-QdMvsKi.css",
+      "products/quantum-readiness/node_modules/playwright-core/lib/vite/traceViewer/codicon.DCmgc-ay.ttf",
+      "products/quantum-readiness/node_modules/playwright-core/lib/vite/traceViewer/defaultSettingsView.BLFoOugd.css",
+      "products/quantum-readiness/node_modules/playwright-core/lib/vite/traceViewer/index.B_TqY17P.css",
+      "products/quantum-readiness/node_modules/playwright-core/lib/vite/traceViewer/index.KZ4wOW1K.js",
+      "products/quantum-readiness/node_modules/playwright-core/lib/vite/traceViewer/index.html",
+      "products/quantum-readiness/node_modules/playwright-core/lib/vite/traceViewer/manifest.webmanifest",
+      "products/quantum-readiness/node_modules/playwright-core/lib/vite/traceViewer/playwright-logo.svg",
+      "products/quantum-readiness/node_modules/playwright-core/lib/vite/traceViewer/snapshot.B_Jk1wbt.js",
+      "products/quantum-readiness/node_modules/playwright-core/lib/vite/traceViewer/snapshot.html",
+      "products/quantum-readiness/node_modules/playwright-core/lib/vite/traceViewer/sw.bundle.js",
+      "products/quantum-readiness/node_modules/playwright-core/lib/vite/traceViewer/uiMode.C7UW1sC9.css",
+      "products/quantum-readiness/node_modules/playwright-core/lib/vite/traceViewer/uiMode.Dzuouizj.js",
+      "products/quantum-readiness/node_modules/playwright-core/lib/vite/traceViewer/uiMode.html",
+      "products/quantum-readiness/node_modules/playwright-core/lib/vite/traceViewer/xtermModule.kHJ-D0s7.css",
+      "products/quantum-readiness/node_modules/playwright-core/lib/webp_codec.LICENSE",
+      "products/quantum-readiness/node_modules/playwright-core/lib/webp_codec.wasm",
+      "products/quantum-readiness/node_modules/playwright-core/lib/xdg-open",
+      "products/quantum-readiness/node_modules/playwright-core/package.json",
+      "products/quantum-readiness/node_modules/playwright-core/types/protocol.d.ts",
+      "products/quantum-readiness/node_modules/playwright-core/types/structs.d.ts",
+      "products/quantum-readiness/node_modules/playwright-core/types/types.d.ts",
+      "products/quantum-readiness/node_modules/playwright/LICENSE",
+      "products/quantum-readiness/node_modules/playwright/NOTICE",
+      "products/quantum-readiness/node_modules/playwright/README.md",
+      "products/quantum-readiness/node_modules/playwright/ThirdPartyNotices.txt",
+      "products/quantum-readiness/node_modules/playwright/cli.js",
+      "products/quantum-readiness/node_modules/playwright/index.d.ts",
+      "products/quantum-readiness/node_modules/playwright/index.js",
+      "products/quantum-readiness/node_modules/playwright/index.mjs",
+      "products/quantum-readiness/node_modules/playwright/jsx-runtime.js",
+      "products/quantum-readiness/node_modules/playwright/jsx-runtime.mjs",
+      "products/quantum-readiness/node_modules/playwright/lib/agents/agentParser.js",
+      "products/quantum-readiness/node_modules/playwright/lib/agents/copilot-setup-steps.yml",
+      "products/quantum-readiness/node_modules/playwright/lib/agents/generateAgents.js",
+      "products/quantum-readiness/node_modules/playwright/lib/agents/playwright-test-coverage.prompt.md",
+      "products/quantum-readiness/node_modules/playwright/lib/agents/playwright-test-generate.prompt.md",
+      "products/quantum-readiness/node_modules/playwright/lib/agents/playwright-test-generator.agent.md",
+      "products/quantum-readiness/node_modules/playwright/lib/agents/playwright-test-heal.prompt.md",
+      "products/quantum-readiness/node_modules/playwright/lib/agents/playwright-test-healer.agent.md",
+      "products/quantum-readiness/node_modules/playwright/lib/agents/playwright-test-plan.prompt.md",
+      "products/quantum-readiness/node_modules/playwright/lib/agents/playwright-test-planner.agent.md",
+      "products/quantum-readiness/node_modules/playwright/lib/cli/reportActions.js",
+      "products/quantum-readiness/node_modules/playwright/lib/cli/testActions.js",
+      "products/quantum-readiness/node_modules/playwright/lib/common/index.js",
+      "products/quantum-readiness/node_modules/playwright/lib/common/index.js.txt",
+      "products/quantum-readiness/node_modules/playwright/lib/errorContext.js",
+      "products/quantum-readiness/node_modules/playwright/lib/globals.js",
+      "products/quantum-readiness/node_modules/playwright/lib/index.js",
+      "products/quantum-readiness/node_modules/playwright/lib/isomorphic.js",
+      "products/quantum-readiness/node_modules/playwright/lib/isomorphic.js.txt",
+      "products/quantum-readiness/node_modules/playwright/lib/loader/loaderProcessEntry.js",
+      "products/quantum-readiness/node_modules/playwright/lib/loader/loaderProcessEntry.js.txt",
+      "products/quantum-readiness/node_modules/playwright/lib/matchers/expect.js",
+      "products/quantum-readiness/node_modules/playwright/lib/matchers/expect.js.LICENSE",
+      "products/quantum-readiness/node_modules/playwright/lib/matchers/expect.js.txt",
+      "products/quantum-readiness/node_modules/playwright/lib/mcp/test/browserBackend.js",
+      "products/quantum-readiness/node_modules/playwright/lib/mcp/test/generatorTools.js",
+      "products/quantum-readiness/node_modules/playwright/lib/mcp/test/plannerTools.js",
+      "products/quantum-readiness/node_modules/playwright/lib/mcp/test/seed.js",
+      "products/quantum-readiness/node_modules/playwright/lib/mcp/test/streams.js",
+      "products/quantum-readiness/node_modules/playwright/lib/mcp/test/testBackend.js",
+      "products/quantum-readiness/node_modules/playwright/lib/mcp/test/testContext.js",
+      "products/quantum-readiness/node_modules/playwright/lib/mcp/test/testTool.js",
+      "products/quantum-readiness/node_modules/playwright/lib/mcp/test/testTools.js",
+      "products/quantum-readiness/node_modules/playwright/lib/package.js",
+      "products/quantum-readiness/node_modules/playwright/lib/program.js",
+      "products/quantum-readiness/node_modules/playwright/lib/runner/index.js",
+      "products/quantum-readiness/node_modules/playwright/lib/runner/index.js.txt",
+      "products/quantum-readiness/node_modules/playwright/lib/transform/babelBundle.js",
+      "products/quantum-readiness/node_modules/playwright/lib/transform/babelBundle.js.LICENSE",
+      "products/quantum-readiness/node_modules/playwright/lib/transform/babelBundle.js.txt",
+      "products/quantum-readiness/node_modules/playwright/lib/transform/esmLoader.js",
+      "products/quantum-readiness/node_modules/playwright/lib/transform/esmLoader.js.LICENSE",
+      "products/quantum-readiness/node_modules/playwright/lib/transform/esmLoader.js.txt",
+      "products/quantum-readiness/node_modules/playwright/lib/util.js",
+      "products/quantum-readiness/node_modules/playwright/lib/worker/workerProcessEntry.js",
+      "products/quantum-readiness/node_modules/playwright/lib/worker/workerProcessEntry.js.txt",
+      "products/quantum-readiness/node_modules/playwright/package.json",
+      "products/quantum-readiness/node_modules/playwright/test.d.ts",
+      "products/quantum-readiness/node_modules/playwright/test.js",
+      "products/quantum-readiness/node_modules/playwright/test.mjs",
+      "products/quantum-readiness/node_modules/playwright/types/test.d.ts",
+      "products/quantum-readiness/node_modules/playwright/types/testReporter.d.ts"
+    ]
+  },
+  "refs": {
+    "exit": 0,
+    "output": [
+      "refs/heads/codex/asf-mvp-01-native-delivery commit 53f7bbf7a6ae9c103b8d4088354b377bd62745c1",
+      "refs/heads/codex/qr-mvp-01 commit cbbfc11306db1f185147356022ea12d3b9aa47e3",
+      "refs/heads/codex/qr-mvp-02 commit e8fab07547c6ccaaae9b83be350332caf47e1a6b",
+      "refs/heads/main commit fd5295a1b05c3559b3eaeb7cf9c7c8ed3e6483da",
+      "refs/remotes/origin/main commit dbdee018e5a128b08b413f4d1a71128256a58aec"
+    ]
+  },
+  "worktrees": {
+    "exit": 0,
+    "output": [
+      "worktree C:/Users/flori/OneDrive/Documenten/ChatGPT/agent-software-factory",
+      "HEAD e8fab07547c6ccaaae9b83be350332caf47e1a6b",
+      "branch refs/heads/codex/qr-mvp-02",
+      ""
+    ]
+  },
+  "id": "r001",
+  "objects": [
+    {
+      "oid": "048381e448589bb0713a897181a8fd2816b83659",
+      "type": "blob",
+      "size": 727
+    },
+    {
+      "oid": "0ce717be3ce2764b361ff6e4666d43bc200f1033",
+      "type": "blob",
+      "size": 2697
+    },
+    {
+      "oid": "12f8cb6267f5e0d768f4d092c1f1789c52b322ad",
+      "type": "blob",
+      "size": 5560
+    },
+    {
+      "oid": "13606210b22f9fa65b72c82b2e4ba9ab969a1695",
+      "type": "blob",
+      "size": 7707
+    },
+    {
+      "oid": "1b4293cd59d010220f3aeb062755f02d40e8e943",
+      "type": "blob",
+      "size": 646
+    },
+    {
+      "oid": "1b781b4b77192cdbd4a6565ea3f01d72a6d57aeb",
+      "type": "tree",
+      "size": 46
+    },
+    {
+      "oid": "1c1934ca91c4e6a3ea640c1e37535f918a1bc69b",
+      "type": "tree",
+      "size": 37
+    },
+    {
+      "oid": "1d61f49b5bcf52fe2f2c817ce00fce7d0c89f7a9",
+      "type": "blob",
+      "size": 13757
+    },
+    {
+      "oid": "211613b9c35392978ccf39ff1a477fe62e2e4f19",
+      "type": "blob",
+      "size": 1913
+    },
+    {
+      "oid": "223850dd8f909fcddef52dcc2bb5aff865f4472f",
+      "type": "commit",
+      "size": 1459
+    },
+    {
+      "oid": "22a0c7767bda9f0774b11ff3f2442c10c4c627c8",
+      "type": "blob",
+      "size": 166
+    },
+    {
+      "oid": "23433806a1d6c09ccb9c3eabf7431e1f5f6253cf",
+      "type": "commit",
+      "size": 307
+    },
+    {
+      "oid": "2dfec27f8748070f142635de8ddb5d373fa1a1fd",
+      "type": "blob",
+      "size": 13052
+    },
+    {
+      "oid": "2e1b8a683cde55003c14f587101ef5bbe1b35a13",
+      "type": "tree",
+      "size": 288
+    },
+    {
+      "oid": "2e6b3766d102045c86766630137eda3e2d2ee97d",
+      "type": "blob",
+      "size": 1734
+    },
+    {
+      "oid": "3248a943e3482a04f691309f344923b99811b8d9",
+      "type": "blob",
+      "size": 5379
+    },
+    {
+      "oid": "327d3b6f49254cd829f3913e4cacb5e4e5eaaaf3",
+      "type": "blob",
+      "size": 143
+    },
+    {
+      "oid": "35fdcab38bee6b438ea5f7a978abf5c817a5d9a4",
+      "type": "tree",
+      "size": 119
+    },
+    {
+      "oid": "38723a7f5990432906aa3ade1c217ea1f68aa135",
+      "type": "blob",
+      "size": 10990
+    },
+    {
+      "oid": "38b79ab15e4a860e9fb92325fead5171a775fa90",
+      "type": "blob",
+      "size": 10603
+    },
+    {
+      "oid": "3bef42af1bde25afb715ff69efbe06117b599ea5",
+      "type": "tree",
+      "size": 278
+    },
+    {
+      "oid": "3c1f8b763c9b556d44c2b3db55d118003fe5ec0b",
+      "type": "blob",
+      "size": 16322
+    },
+    {
+      "oid": "3e59ab1c74feafe2b30043e79fd1947367ffdeef",
+      "type": "blob",
+      "size": 24
+    },
+    {
+      "oid": "40fb7fc32c8efadaf78d50ca865202ccc68040ba",
+      "type": "blob",
+      "size": 9064
+    },
+    {
+      "oid": "42ae5850c3b1e19204a7b2c4597c16aa081190cc",
+      "type": "tree",
+      "size": 72
+    },
+    {
+      "oid": "42fd99824e365afc816e14e4e4ab43122e9b8bc6",
+      "type": "blob",
+      "size": 876
+    },
+    {
+      "oid": "452ed1abcb3acbb21abbc51396838e47f4a5ace7",
+      "type": "tree",
+      "size": 36
+    },
+    {
+      "oid": "47207eec48de360f86ab6e11384cf970dacd59c3",
+      "type": "tree",
+      "size": 44
+    },
+    {
+      "oid": "5235bd229a18530ae3cab318bf0d3c3976ce6187",
+      "type": "tree",
+      "size": 119
+    },
+    {
+      "oid": "5366877e19de7ca6aa73df4d316e17c8fcf65f34",
+      "type": "tree",
+      "size": 278
+    },
+    {
+      "oid": "53ef1ff6452d6ff5f239dbbedb4d1285f9cef3bf",
+      "type": "tree",
+      "size": 309
+    },
+    {
+      "oid": "53f7bbf7a6ae9c103b8d4088354b377bd62745c1",
+      "type": "commit",
+      "size": 314
+    },
+    {
+      "oid": "5ad084e8c7e304d578d6b0b648939a568a72c700",
+      "type": "blob",
+      "size": 9026
+    },
+    {
+      "oid": "5d5aebe3a11d832f137237475ccc7ac2ef303526",
+      "type": "tree",
+      "size": 36
+    },
+    {
+      "oid": "5de9d8d76bf9dc624a6e1222df897288b4be9031",
+      "type": "blob",
+      "size": 19243
+    },
+    {
+      "oid": "5e72ea7a7bf233713a08e64b5878ac70ecffe191",
+      "type": "tree",
+      "size": 271
+    },
+    {
+      "oid": "5f362ce549971c2fecee15d5f53e311a21fa4c31",
+      "type": "tree",
+      "size": 288
+    },
+    {
+      "oid": "5fb02c48f919edefd7e395085c75d364cac180f3",
+      "type": "blob",
+      "size": 9814
+    },
+    {
+      "oid": "61a321b79fd17aef67d4925a37aaa4a3bc707930",
+      "type": "tree",
+      "size": 182
+    },
+    {
+      "oid": "63afa7fd8f17d403d698398b4c282203df77a66d",
+      "type": "blob",
+      "size": 12775
+    },
+    {
+      "oid": "64b74afdb31338d0dcefbb35d353b9dbea3fdd9d",
+      "type": "commit",
+      "size": 1180
+    },
+    {
+      "oid": "6643c438131f96f39ad0d659854128ab595498bb",
+      "type": "tree",
+      "size": 36
+    },
+    {
+      "oid": "683647c057835a9d790e72314a0b2da8a3b03ba5",
+      "type": "tree",
+      "size": 44
+    },
+    {
+      "oid": "6a6f113a4d4f128256cfed02765b46979694dab8",
+      "type": "blob",
+      "size": 3963
+    },
+    {
+      "oid": "6de9ac78037ab8c911f9a9bc31aa8d3b1e4c1d53",
+      "type": "commit",
+      "size": 1180
+    },
+    {
+      "oid": "6ed64b9848b0e920d039c955e015afb0dad7132c",
+      "type": "blob",
+      "size": 5539
+    },
+    {
+      "oid": "735ae0b17a413b24d594657432e60451cc2666ef",
+      "type": "blob",
+      "size": 1393
+    },
+    {
+      "oid": "73a5aa7190dac412ba7180970bb8fced4cb7a69f",
+      "type": "blob",
+      "size": 2309
+    },
+    {
+      "oid": "755dc0aaf89bca0af31a251f4149d1af75e1b3ac",
+      "type": "tree",
+      "size": 278
+    },
+    {
+      "oid": "76cd9872e3237f6d358bc5f1593ec954a6fe4730",
+      "type": "blob",
+      "size": 3377
+    },
+    {
+      "oid": "784794cacf5a7234056cfcf1cf5d46746a47ca26",
+      "type": "blob",
+      "size": 6629
+    },
+    {
+      "oid": "78693286c56d18400d77adaf0a9e7a8d4eef8d82",
+      "type": "tree",
+      "size": 95
+    },
+    {
+      "oid": "7e109bfcfb130e7ceef62b9592782d4a2e8633f7",
+      "type": "blob",
+      "size": 9839
+    },
+    {
+      "oid": "7e6881fd3be15eeaba28b032402be5115225d358",
+      "type": "blob",
+      "size": 5782
+    },
+    {
+      "oid": "8111d93baf0922f921a97186e817d327e8a9ac30",
+      "type": "blob",
+      "size": 18774
+    },
+    {
+      "oid": "86a6184497d315a6b6b3fb32ec918d3d5ea1a2a5",
+      "type": "tree",
+      "size": 36
+    },
+    {
+      "oid": "8a09054f84d8a7b820a05ec0430f11ef2434610e",
+      "type": "blob",
+      "size": 8845
+    },
+    {
+      "oid": "8c3a051f0c272e4a98196c9fee50d57a13a2d814",
+      "type": "blob",
+      "size": 902
+    },
+    {
+      "oid": "8dca741336ca65c36f00a08b24643d4dbb212935",
+      "type": "tree",
+      "size": 46
+    },
+    {
+      "oid": "8fa7dd77e9a9ae24898dbee1fd2459674157ad43",
+      "type": "commit",
+      "size": 307
+    },
+    {
+      "oid": "917eceb4b525a30b959cc8c213f731bc06c5959c",
+      "type": "tree",
+      "size": 36
+    },
+    {
+      "oid": "94346fac8d6f1d86ba84033f3a23c3df08dd134b",
+      "type": "tree",
+      "size": 207
+    },
+    {
+      "oid": "979a251e71da4bd886b36b2e4078073721c80151",
+      "type": "blob",
+      "size": 354
+    },
+    {
+      "oid": "98132df1fcaac8f93fa14e1fae369ce7e1362463",
+      "type": "blob",
+      "size": 3607
+    },
+    {
+      "oid": "98439dd53ca97c5701b035024982f470f348da35",
+      "type": "tree",
+      "size": 81
+    },
+    {
+      "oid": "9b4878fffd5acefa1212ebf964c3bbf968f51725",
+      "type": "tree",
+      "size": 41
+    },
+    {
+      "oid": "9cf8e421f7b0d8048cbeaeb218e009e8dfeaf2b4",
+      "type": "tree",
+      "size": 46
+    },
+    {
+      "oid": "a0f27263dc81eb46b92cba7d1fb5efa9afac6e83",
+      "type": "blob",
+      "size": 3006
+    },
+    {
+      "oid": "a18b2e7b976c92e33ebb527617ce6991f11b471a",
+      "type": "blob",
+      "size": 2697
+    },
+    {
+      "oid": "a1ed73f8c8580deb2d2765d77748b7b640b69347",
+      "type": "blob",
+      "size": 6317
+    },
+    {
+      "oid": "a2c8cb8d10689f42260f20fb33b9d4ded904be71",
+      "type": "blob",
+      "size": 7088
+    },
+    {
+      "oid": "a304ae73a49df70e9bd9c436e7e0a6dae47b0942",
+      "type": "tree",
+      "size": 132
+    },
+    {
+      "oid": "a81174a952cde7edc6bee237a998e2d97271dfe8",
+      "type": "blob",
+      "size": 5872
+    },
+    {
+      "oid": "a99a16a2e7edcdd052909aa51a6050cc91e07b46",
+      "type": "tree",
+      "size": 36
+    },
+    {
+      "oid": "adb1aed63985a770d71762cc4fa7c6d64b28a3de",
+      "type": "tree",
+      "size": 95
+    },
+    {
+      "oid": "b09406de4cc29348f338774d6cb72e5b4543e7ee",
+      "type": "blob",
+      "size": 6365
+    },
+    {
+      "oid": "b2d61fd61374c46b805a3b1c068a7d177e146f92",
+      "type": "blob",
+      "size": 5380
+    },
+    {
+      "oid": "b806883ff7e28ebdaf02dce07491d2b568f61fd9",
+      "type": "blob",
+      "size": 3175
+    },
+    {
+      "oid": "bcbd4cf01bea53cd12aba40a6f3c2486d4371da1",
+      "type": "blob",
+      "size": 943
+    },
+    {
+      "oid": "bfd0ff4e0f7551b4e15e455ba3708aebff363efa",
+      "type": "commit",
+      "size": 1180
+    },
+    {
+      "oid": "c2cca07b906792e7ea8bb2000aa754aec3a305b3",
+      "type": "tree",
+      "size": 207
+    },
+    {
+      "oid": "c2cfe5523b2aafb071ee9eabf2d086502b072e7f",
+      "type": "blob",
+      "size": 4757
+    },
+    {
+      "oid": "c7147de60508a0c117aef4318b4ff4722122185c",
+      "type": "tree",
+      "size": 36
+    },
+    {
+      "oid": "c9652e6c0392def29d565201317a26bfe9046e87",
+      "type": "tree",
+      "size": 278
+    },
+    {
+      "oid": "cbbfc11306db1f185147356022ea12d3b9aa47e3",
+      "type": "commit",
+      "size": 309
+    },
+    {
+      "oid": "d07f614eb976ed13faae30c06cb144e56297bb4b",
+      "type": "blob",
+      "size": 2671
+    },
+    {
+      "oid": "d13217a8b0a45ff7c01128da8edd24bce6ba0dec",
+      "type": "blob",
+      "size": 3029
+    },
+    {
+      "oid": "d3025d5d35ab75b075b494fb21bf461cbc62c7ca",
+      "type": "blob",
+      "size": 3248
+    },
+    {
+      "oid": "d5e3b747cfa828d45cfb5ddd0ce0de6fa66b5aca",
+      "type": "blob",
+      "size": 7478
+    },
+    {
+      "oid": "d7e14abfe41c5ab85e290179cd51ce001374300d",
+      "type": "blob",
+      "size": 12962
+    },
+    {
+      "oid": "db3e0bda2d16a97a9d4173ba4fe20f59b4fd5b3a",
+      "type": "blob",
+      "size": 6480
+    },
+    {
+      "oid": "dbdee018e5a128b08b413f4d1a71128256a58aec",
+      "type": "commit",
+      "size": 1470
+    },
+    {
+      "oid": "dd72117210edebce9390232ff03f55d0d3da0289",
+      "type": "tree",
+      "size": 109
+    },
+    {
+      "oid": "dec6e8ba0019dad70f36c365dedb4dfa88a8ba10",
+      "type": "tree",
+      "size": 43
+    },
+    {
+      "oid": "dfb29ebfb22c548403b96013cd782aca66e475ef",
+      "type": "tree",
+      "size": 109
+    },
+    {
+      "oid": "e281602acb30c17eacd35a2f21d58a7441e5de1e",
+      "type": "blob",
+      "size": 11893
+    },
+    {
+      "oid": "e56de275468060e6880fe85f6e8790cf9bf0699d",
+      "type": "blob",
+      "size": 7245
+    },
+    {
+      "oid": "e8fa4ded7404dc52809500f3776696cb2064b759",
+      "type": "blob",
+      "size": 400
+    },
+    {
+      "oid": "e8fab07547c6ccaaae9b83be350332caf47e1a6b",
+      "type": "commit",
+      "size": 313
+    },
+    {
+      "oid": "e9795916965bc2692ec8716e0811851281badf97",
+      "type": "blob",
+      "size": 400
+    },
+    {
+      "oid": "e9a78cda93fb2817f09b2c96c6d53bb2ba1ab9a5",
+      "type": "blob",
+      "size": 7288
+    },
+    {
+      "oid": "eb73754bdf0627a2c64564246f5f659505edf843",
+      "type": "tree",
+      "size": 95
+    },
+    {
+      "oid": "ed89b18fc99458701ce41ac89b46934dc27097ad",
+      "type": "blob",
+      "size": 26
+    },
+    {
+      "oid": "ef9a3c14d4d2fbfa08e82a054c00cdb6773b568f",
+      "type": "tree",
+      "size": 33
+    },
+    {
+      "oid": "f36f878de61cbd34c299f9fd3169e5c054f2b8dd",
+      "type": "tree",
+      "size": 119
+    },
+    {
+      "oid": "fd5295a1b05c3559b3eaeb7cf9c7c8ed3e6483da",
+      "type": "commit",
+      "size": 1005
+    },
+    {
+      "oid": "ff7b795bb981a4dd579d0f19ab42b71a15a205ab",
+      "type": "tree",
+      "size": 81
+    }
+  ],
+  "pack": "r001.pack",
+  "pack_sha256": "60c43cc45810fe9748ceb64ce9be63cad3e8755e3db45c1a619479ee1b52cfeb",
+  "pack_bytes": 98238,
+  "metadata_files": [
+    {
+      "path": "HEAD",
+      "bytes": 32,
+      "sha256": "c144b0dbb3dfd204828870b1c963c6d39c9f74f178418fd4d374d42cb22d8e66"
+    },
+    {
+      "path": "index",
+      "bytes": 4132,
+      "sha256": "c5b7150202d8de0b6896f00e2145f6758e840d972f06fe93f395c36e4b0f97db"
+    },
+    {
+      "path": "info/exclude",
+      "bytes": 240,
+      "sha256": "6671fe83b7a07c8932ee89164d1f2793b2318058eb8b98dc5c06ee0a5a3b0ec1"
+    },
+    {
+      "path": "logs/HEAD",
+      "bytes": 1938,
+      "sha256": "30b605c680e0c887c22fa7fa7edb54c5b982632ff41c1cb05a73818b9c9569c6"
+    },
+    {
+      "path": "logs/refs/heads/main",
+      "bytes": 215,
+      "sha256": "c5147d2093fda44ef3f609c44705cc9b6531d94e8c0dd462131754bbb4af3e79"
+    },
+    {
+      "path": "logs/refs/remotes/origin/main",
+      "bytes": 376,
+      "sha256": "c03ca55c08991f82ce68cb87921de5a2a3e00cb4b8a7299b3148b77c5762906c"
+    },
+    {
+      "path": "logs/refs/heads/codex/asf-mvp-01-native-delivery",
+      "bytes": 602,
+      "sha256": "0446e88dc8646f00cb83ce2ec0840ecaf442eac6ee73a2532809d26049b313cf"
+    },
+    {
+      "path": "logs/refs/heads/codex/qr-mvp-01",
+      "bytes": 613,
+      "sha256": "9fca6ba62c32a9db76227a8bbb9b3c1f9fcb6be0d6b0d3f848d6d0b3c972bd3c"
+    },
+    {
+      "path": "logs/refs/heads/codex/qr-mvp-02",
+      "bytes": 406,
+      "sha256": "047dc9275b5f3adf0e3c7b0aa6df6cdf4e09e2e73c8b3df9e136f2226fa6146d"
+    }
+  ],
+  "metadata_sha256": "86de47a1ddd75aea3cab4cfb828f3e1c74c3b27f09da19a8ecd2ec3afa598876",
+  "safe_local_config": {
+    "core.bare": "false",
+    "core.filemode": "false",
+    "core.logallrefupdates": "true",
+    "core.symlinks": "false",
+    "core.ignorecase": "true"
+  },
+  "config_policy": "No raw Git config or credential helpers copied; only listed safe scalar settings retained.",
+  "symbolic_refs": {}
+}

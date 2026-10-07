@@ -13,3 +13,5 @@ this repository. Apply the owner's current request and authorization boundaries.
 Record which repository instructions and skill the session loaded, together with
 available native session/task identifiers. If a required capability is unavailable,
 report its specific failure and the unmet criterion rather than simulating it.
+
+For restoration or resumption of this preserved state, read RESUME.md before acting; historical approval and experiment stop rules still apply.

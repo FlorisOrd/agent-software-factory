@@ -1,0 +1,14 @@
+[
+  {
+    "name": "asf-workflow",
+    "exit": 0,
+    "log": "C:\\Users\\flori\\AppData\\Local\\Temp\\codex-preserve-20261007-01a11617\\factory-restoration-checks\\asf-workflow.log",
+    "result": "PASS"
+  },
+  {
+    "name": "asf-product",
+    "exit": 0,
+    "log": "C:\\Users\\flori\\AppData\\Local\\Temp\\codex-preserve-20261007-01a11617\\factory-restoration-checks\\asf-product.log",
+    "result": "PASS"
+  }
+]

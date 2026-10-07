@@ -1,0 +1,1198 @@
+[
+  {
+    "relative": ".agents/skills/factory-delivery/SKILL.md",
+    "attributes": 1056,
+    "sha256": "c1f40408e2de2bafef3070560f77ba7a173822c462b04f8f5f389f1a7da71823",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.agents\\skills\\factory-delivery\\SKILL.md",
+    "lastWriteUtc": "2026-09-06T11:13:46.9834441Z",
+    "length": 7478,
+    "archive": "agent-software-factory/.agents/skills/factory-delivery/SKILL.md"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/.gitignore",
+    "attributes": 1056,
+    "sha256": "f280b0a63b63225907f382c1ef8310a29802624940c13db33356e3fb345ce317",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\.gitignore",
+    "lastWriteUtc": "2026-09-06T12:20:36.4797721Z",
+    "length": 166,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/.gitignore"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/SESSION.md",
+    "attributes": 1056,
+    "sha256": "2a884a77e6cf7e14e443dc356ac81de91ee7bce7d17ee7ee429fea1ff34824b6",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\SESSION.md",
+    "lastWriteUtc": "2026-09-07T07:08:50.6873561Z",
+    "length": 5782,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/SESSION.md"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/builder-browser-final.txt",
+    "attributes": 1056,
+    "sha256": "8dadfff6b2ca04818bdc6618d7e81e346bb20172d7e88dc6ab27772f117db2ed",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\builder-browser-final.txt",
+    "lastWriteUtc": "2026-09-06T12:41:12.8565819Z",
+    "length": 881,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/builder-browser-final.txt"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/builder-completion.md",
+    "attributes": 1056,
+    "sha256": "d93f81111528c3d9ca2ac01c362ea4f400883fcd62e0eff3b0504438a18a41a7",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\builder-completion.md",
+    "lastWriteUtc": "2026-09-06T12:42:46.7575357Z",
+    "length": 4373,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/builder-completion.md"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/builder-failures.md",
+    "attributes": 1056,
+    "sha256": "603295fc4e0fc364329fcd73123c2c598a87e49fe1a89c022f51f3cc1c3ce327",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\builder-failures.md",
+    "lastWriteUtc": "2026-09-07T07:19:21.1777268Z",
+    "length": 3909,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/builder-failures.md"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/builder-static-final.txt",
+    "attributes": 1056,
+    "sha256": "15ca12237241b87cf76be71b7db2283a75c6cc764039693d04bc4f58f2f2b241",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\builder-static-final.txt",
+    "lastWriteUtc": "2026-09-06T12:42:44.1127675Z",
+    "length": 488,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/builder-static-final.txt"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/builder-tests-final.txt",
+    "attributes": 1056,
+    "sha256": "82f963f0974b8caefa1e23e87d93a56a55f127e20ce3f2fd69b210937f39120e",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\builder-tests-final.txt",
+    "lastWriteUtc": "2026-09-06T12:41:43.6475388Z",
+    "length": 2055,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/builder-tests-final.txt"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/builder-tests-first.txt",
+    "attributes": 1056,
+    "sha256": "398e96b8cd6d13ba43c33656c6a57946fa898da068598f3a067dff50e5890e2b",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\builder-tests-first.txt",
+    "lastWriteUtc": "2026-09-06T12:33:32.0670185Z",
+    "length": 24657,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/builder-tests-first.txt"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/builder-tests-recheck.txt",
+    "attributes": 1056,
+    "sha256": "f2a90ea2efa46e8b8df79e81fbb98e8319be9097170f9b64d3db146c545b464f",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\builder-tests-recheck.txt",
+    "lastWriteUtc": "2026-09-06T12:35:59.7287621Z",
+    "length": 1947,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/builder-tests-recheck.txt"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/builder-ui-browser-initial.txt",
+    "attributes": 1056,
+    "sha256": "8dadfff6b2ca04818bdc6618d7e81e346bb20172d7e88dc6ab27772f117db2ed",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\builder-ui-browser-initial.txt",
+    "lastWriteUtc": "2026-09-06T12:32:12.3184032Z",
+    "length": 881,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/builder-ui-browser-initial.txt"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/builder-ui-browser-recheck.txt",
+    "attributes": 1056,
+    "sha256": "8dadfff6b2ca04818bdc6618d7e81e346bb20172d7e88dc6ab27772f117db2ed",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\builder-ui-browser-recheck.txt",
+    "lastWriteUtc": "2026-09-06T12:33:15.7057529Z",
+    "length": 881,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/builder-ui-browser-recheck.txt"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/builder-ui-result.md",
+    "attributes": 1056,
+    "sha256": "3cc7b494860b21f93d449696d526260d2b7ac9f8d8725f38a3971fa86afbac71",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\builder-ui-result.md",
+    "lastWriteUtc": "2026-09-06T12:33:59.1911273Z",
+    "length": 2227,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/builder-ui-result.md"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/ci-evidence.zip",
+    "attributes": 1056,
+    "sha256": "cacf2807e6a7f828645bb731ee76b4dc5c751d59f23ff9e10cf52d06fd0ec0f9",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\ci-evidence.zip",
+    "lastWriteUtc": "2026-09-07T07:24:56.0453378Z",
+    "length": 473571,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/ci-evidence.zip"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/ci-factory.log",
+    "attributes": 1056,
+    "sha256": "c976dc0a89dcc32de4fddb27d86e31acbc7f2dae5c9361ad0d524dd4c023c09a",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\ci-factory.log",
+    "lastWriteUtc": "2026-09-07T07:16:55.6933395Z",
+    "length": 16065,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/ci-factory.log"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/ci-final-factory.log",
+    "attributes": 1056,
+    "sha256": "ad534833c4a887d872992bc255ba5b41e6eeed0fd9ca051992575cc560bf7599",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\ci-final-factory.log",
+    "lastWriteUtc": "2026-09-07T07:23:32.3195246Z",
+    "length": 16066,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/ci-final-factory.log"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/ci-final-product.log",
+    "attributes": 1056,
+    "sha256": "404321a7b7afe77db2de67be1ffdf898fa41c3888544e9282a96d81e52fb3a26",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\ci-final-product.log",
+    "lastWriteUtc": "2026-09-07T07:23:35.1892113Z",
+    "length": 49502,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/ci-final-product.log"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/ci-product.log",
+    "attributes": 1056,
+    "sha256": "78ba52400dbe362972bf910eaa0f8d56955ed23c3b8fac90dd2451d94fd4c41a",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\ci-product.log",
+    "lastWriteUtc": "2026-09-07T07:16:58.4712499Z",
+    "length": 47601,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/ci-product.log"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/lead-hybrid-report.html",
+    "attributes": 1056,
+    "sha256": "a975b9823a122ae57d36092ab42877d8bb72d8aee3cbe9d3fe0625d34355be23",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\lead-hybrid-report.html",
+    "lastWriteUtc": "2026-09-07T07:22:45.7793685Z",
+    "length": 48947,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/lead-hybrid-report.html"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/lead-hybrid-report.json",
+    "attributes": 1056,
+    "sha256": "42c847d9ead446b19ae12fb30d8bcd168a4e25a44d98edad2da496e1c621aca5",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\lead-hybrid-report.json",
+    "lastWriteUtc": "2026-09-07T07:22:45.7822504Z",
+    "length": 17701,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/lead-hybrid-report.json"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/lead-walkthrough.md",
+    "attributes": 1056,
+    "sha256": "24adfbbd7a9a7845455f5ca993433b44e6c1a42a6b7297ddd23fc4803b2d5bf5",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\lead-walkthrough.md",
+    "lastWriteUtc": "2026-09-07T07:26:41.5676870Z",
+    "length": 2897,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/lead-walkthrough.md"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/owner-report.md",
+    "attributes": 1056,
+    "sha256": "af769cbbd30098ad896c9043d1f1e7847e1d9dd043204e19ce0aba7a5b88227a",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\owner-report.md",
+    "lastWriteUtc": "2026-09-07T07:31:15.3226325Z",
+    "length": 3495,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/owner-report.md"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/requirements.md",
+    "attributes": 1056,
+    "sha256": "3a82aaf28cf2898e5544fba646c6bec0572bc8e85a3c254f5495c4aa36258022",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\requirements.md",
+    "lastWriteUtc": "2026-09-06T12:13:59.7045569Z",
+    "length": 12775,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/requirements.md"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/verifier-browser-check.json",
+    "attributes": 1056,
+    "sha256": "6296b00d9297e11f737e7ccafb48e8c022c589c7ade833e5e9f512ac7bf5fd17",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\verifier-browser-check.json",
+    "lastWriteUtc": "2026-09-07T07:11:38.7825520Z",
+    "length": 65230,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/verifier-browser-check.json"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/verifier-browser-demo.png",
+    "attributes": 1056,
+    "sha256": "5a58aacd925f50623b0cc6567dd4ad5da298441c0b8e53a215c61a5bafb9f9bf",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\verifier-browser-demo.png",
+    "lastWriteUtc": "2026-09-07T07:11:33.8921782Z",
+    "length": 105637,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/verifier-browser-demo.png"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/verifier-browser-mobile.png",
+    "attributes": 1056,
+    "sha256": "d36eaea15accc20c131a2588468664f221ac6dc8cdd7e880df8d237f10e6fcd3",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\verifier-browser-mobile.png",
+    "lastWriteUtc": "2026-09-07T07:11:38.7787295Z",
+    "length": 108440,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/verifier-browser-mobile.png"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/verifier-browser-report.png",
+    "attributes": 1056,
+    "sha256": "89fa2349f72263b30cad904868d2e897fe0f952ebaedd35ad37c84eeea146b88",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\verifier-browser-report.png",
+    "lastWriteUtc": "2026-09-07T07:11:35.6411566Z",
+    "length": 88301,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/verifier-browser-report.png"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/verifier-browser.txt",
+    "attributes": 1056,
+    "sha256": "623ab8c2ad792c1028cb12af9e1d48431878994db2cf5abb65ab3c71884b930f",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\verifier-browser.txt",
+    "lastWriteUtc": "2026-09-07T07:11:39.4612259Z",
+    "length": 1101,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/verifier-browser.txt"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/verifier-ci-browser-demo.png",
+    "attributes": 1056,
+    "sha256": "e79d903af729cb586d19a2968fb33de370739b0003b37e301dc81038be63dfb8",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\verifier-ci-browser-demo.png",
+    "lastWriteUtc": "2026-09-07T05:21:16.0000000Z",
+    "length": 163385,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/verifier-ci-browser-demo.png"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/verifier-ci-browser-mobile.png",
+    "attributes": 1056,
+    "sha256": "2e280c9d40ccfe3a8307c2af4690c544fb6203de6de0c885f090c27ae234484e",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\verifier-ci-browser-mobile.png",
+    "lastWriteUtc": "2026-09-07T05:21:20.0000000Z",
+    "length": 180006,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/verifier-ci-browser-mobile.png"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/verifier-ci-browser-report.png",
+    "attributes": 1056,
+    "sha256": "9dd28a08d884841a70076383794e17f1f7192a5b1b96087e5acb9249195e2b6c",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\verifier-ci-browser-report.png",
+    "lastWriteUtc": "2026-09-07T05:21:18.0000000Z",
+    "length": 143312,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/verifier-ci-browser-report.png"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/verifier-command-issues.txt",
+    "attributes": 1056,
+    "sha256": "0e9a604f72d204b7549aee86f2c4ad7b01f6748769382fd48e6bbb976ddb36a5",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\verifier-command-issues.txt",
+    "lastWriteUtc": "2026-09-07T07:17:29.3191275Z",
+    "length": 1105,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/verifier-command-issues.txt"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/verifier-completion-initial.md",
+    "attributes": 1056,
+    "sha256": "46bc06aa8b7a80fd71d1a1ef160a89629603a4c5feb0d127f511e459189ec385",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\verifier-completion-initial.md",
+    "lastWriteUtc": "2026-09-07T07:18:48.2256727Z",
+    "length": 1996,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/verifier-completion-initial.md"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/verifier-completion.md",
+    "attributes": 1056,
+    "sha256": "2a3e6ef7111174fa52e9d426b93708c824f56064b993161c02ead162ed96ccf5",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\verifier-completion.md",
+    "lastWriteUtc": "2026-09-07T07:20:12.0333320Z",
+    "length": 2491,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/verifier-completion.md"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/verifier-controlled-reports.json",
+    "attributes": 1056,
+    "sha256": "c093b42c6b691e901c84ec14507a987a471b09af24230f35c722eb8f19440824",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\verifier-controlled-reports.json",
+    "lastWriteUtc": "2026-09-07T07:10:47.3233676Z",
+    "length": 59658,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/verifier-controlled-reports.json"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/verifier-final-completion.md",
+    "attributes": 1056,
+    "sha256": "68fc1f40fe3b0ccf303535c9c5e8cd743ab98c3867c3415407655b8e81d0d6e5",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\verifier-final-completion.md",
+    "lastWriteUtc": "2026-09-07T07:28:16.3691887Z",
+    "length": 2138,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/verifier-final-completion.md"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/verifier-recheck-browser-check.json",
+    "attributes": 1056,
+    "sha256": "0a77508f7dbf9d10510403e0229d5547ddbe9157e2e76e2abc8725aa8beda26a",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\verifier-recheck-browser-check.json",
+    "lastWriteUtc": "2026-09-07T07:21:27.6509333Z",
+    "length": 65229,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/verifier-recheck-browser-check.json"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/verifier-recheck-browser-demo.png",
+    "attributes": 1056,
+    "sha256": "5a58aacd925f50623b0cc6567dd4ad5da298441c0b8e53a215c61a5bafb9f9bf",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\verifier-recheck-browser-demo.png",
+    "lastWriteUtc": "2026-09-07T07:21:22.6773734Z",
+    "length": 105637,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/verifier-recheck-browser-demo.png"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/verifier-recheck-browser-mobile.png",
+    "attributes": 1056,
+    "sha256": "d36eaea15accc20c131a2588468664f221ac6dc8cdd7e880df8d237f10e6fcd3",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\verifier-recheck-browser-mobile.png",
+    "lastWriteUtc": "2026-09-07T07:21:27.6468436Z",
+    "length": 108440,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/verifier-recheck-browser-mobile.png"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/verifier-recheck-browser-report.png",
+    "attributes": 1056,
+    "sha256": "c7800453daccab3c56d33f2e9b73bb4c134f31eb48c30ceb4bfdb43d0eecb972",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\verifier-recheck-browser-report.png",
+    "lastWriteUtc": "2026-09-07T07:21:24.6426507Z",
+    "length": 92099,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/verifier-recheck-browser-report.png"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/verifier-recheck-browser.txt",
+    "attributes": 1056,
+    "sha256": "c8d7a11d36511eca1a61bd5da9790ae4e544f92cb49a1c866a2925addb1e3f96",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\verifier-recheck-browser.txt",
+    "lastWriteUtc": "2026-09-07T07:21:28.1316978Z",
+    "length": 1087,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/verifier-recheck-browser.txt"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/verifier-recheck-ci.txt",
+    "attributes": 1056,
+    "sha256": "6b87c85620df318d22ca6dbf8b7db2c8fc9be4696d6382594f277905c2cae040",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\verifier-recheck-ci.txt",
+    "lastWriteUtc": "2026-09-07T07:26:49.9360424Z",
+    "length": 3659,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/verifier-recheck-ci.txt"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/verifier-recheck-controlled-reports.json",
+    "attributes": 1056,
+    "sha256": "fd1735c3f5b984e910b998ea3fb17d0f39fde7767e820b554a40f2c1ec403a47",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\verifier-recheck-controlled-reports.json",
+    "lastWriteUtc": "2026-09-07T07:20:49.7929511Z",
+    "length": 59658,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/verifier-recheck-controlled-reports.json"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/verifier-recheck-scope-first.txt",
+    "attributes": 1056,
+    "sha256": "2eaee66c6a707c778fd873f5d74f3d2995eee3bf8b83911701e8805ff50bd7ba",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\verifier-recheck-scope-first.txt",
+    "lastWriteUtc": "2026-09-07T07:22:52.3856127Z",
+    "length": 1253,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/verifier-recheck-scope-first.txt"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/verifier-recheck-scope.txt",
+    "attributes": 1056,
+    "sha256": "e6d4b209d5cde3da70b504bc80beb634ee13886a6352fad6e957f0f191ceb540",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\verifier-recheck-scope.txt",
+    "lastWriteUtc": "2026-09-07T07:22:52.7282656Z",
+    "length": 1595,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/verifier-recheck-scope.txt"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/verifier-recheck-static.txt",
+    "attributes": 1056,
+    "sha256": "bcd4b2c1ca68cd21d3f8484274e7421ff3471dd223bfb16873d1361018f3eb6e",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\verifier-recheck-static.txt",
+    "lastWriteUtc": "2026-09-07T07:21:20.6743652Z",
+    "length": 407,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/verifier-recheck-static.txt"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/verifier-recheck-targeted.txt",
+    "attributes": 1056,
+    "sha256": "3b7c861312862653289c2c87171c4879ae8a09f350365912a88c11ac4f131ac2",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\verifier-recheck-targeted.txt",
+    "lastWriteUtc": "2026-09-07T07:22:14.3331094Z",
+    "length": 1436,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/verifier-recheck-targeted.txt"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/verifier-recheck-tests.txt",
+    "attributes": 1056,
+    "sha256": "074932091da1284f6c3bc40ed9ff92af12b41a6435455318bbba68e54c36b7d9",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\verifier-recheck-tests.txt",
+    "lastWriteUtc": "2026-09-07T07:20:52.3093802Z",
+    "length": 2257,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/verifier-recheck-tests.txt"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/verifier-recheck.md",
+    "attributes": 1056,
+    "sha256": "d42625103d6f5b8c82e358e6f28089d7bbffe889bec63fb8116271a603f90337",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\verifier-recheck.md",
+    "lastWriteUtc": "2026-09-07T07:28:11.3381307Z",
+    "length": 8025,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/verifier-recheck.md"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/verifier-review-initial.md",
+    "attributes": 1056,
+    "sha256": "07e8c281eef5d73138cd1b7aac7522c5ddae3bb0c544c3fcaec99116e6ab3d2f",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\verifier-review-initial.md",
+    "lastWriteUtc": "2026-09-07T07:18:45.4258759Z",
+    "length": 12448,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/verifier-review-initial.md"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/verifier-review.md",
+    "attributes": 1056,
+    "sha256": "0543f6ad740ff66830d0d71f93ec8e331d70681de5da4ff28ed2efd6545eda48",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\verifier-review.md",
+    "lastWriteUtc": "2026-09-07T07:28:13.9514126Z",
+    "length": 14302,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/verifier-review.md"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/verifier-sha256.txt",
+    "attributes": 1056,
+    "sha256": "abb8f64c7b130f99a063dbe784a17a292a9a3cfd4933d8450b9d28a5dc1b3458",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\verifier-sha256.txt",
+    "lastWriteUtc": "2026-09-07T07:28:20.1000750Z",
+    "length": 3047,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/verifier-sha256.txt"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/verifier-static.txt",
+    "attributes": 1056,
+    "sha256": "f5a50eb3b83d326946584a6c91ad6205fc7bdcfafca8cf14635a088a754e958f",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\verifier-static.txt",
+    "lastWriteUtc": "2026-09-07T07:11:28.9764739Z",
+    "length": 407,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/verifier-static.txt"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/verifier-targeted-source.txt",
+    "attributes": 1056,
+    "sha256": "3e76ecce0029358dfe0ebeafe0f26e802e6e61c62b31ead8e90cb7f7e7439ae3",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\verifier-targeted-source.txt",
+    "lastWriteUtc": "2026-09-07T07:14:10.6290527Z",
+    "length": 7064,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/verifier-targeted-source.txt"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/verifier-targeted.txt",
+    "attributes": 1056,
+    "sha256": "c99e565df113af50c577331e2b86f8afd162ce9ecc7874517109747379cb2fb2",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\verifier-targeted.txt",
+    "lastWriteUtc": "2026-09-07T07:14:32.0424529Z",
+    "length": 1373,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/verifier-targeted.txt"
+  },
+  {
+    "relative": ".delivery/qr-mvp-01/verifier-tests.txt",
+    "attributes": 1056,
+    "sha256": "b013725af1f875cf2a7d55dd097ffe5d01d4296f0e7ffbb7891b4ccfe8c07540",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-01\\verifier-tests.txt",
+    "lastWriteUtc": "2026-09-07T07:10:49.0539098Z",
+    "length": 2257,
+    "archive": "agent-software-factory/.delivery/qr-mvp-01/verifier-tests.txt"
+  },
+  {
+    "relative": ".delivery/qr-mvp-02/.gitignore",
+    "attributes": 1056,
+    "sha256": "4d9bd7543b92fc9f21310da699a52d49e441d9e6369727be989e7d124cfba37b",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-02\\.gitignore",
+    "lastWriteUtc": "2026-09-07T08:52:16.4562896Z",
+    "length": 143,
+    "archive": "agent-software-factory/.delivery/qr-mvp-02/.gitignore"
+  },
+  {
+    "relative": ".delivery/qr-mvp-02/SESSION.md",
+    "attributes": 1056,
+    "sha256": "5a307938b6e97f449f880514a02931203f4252195d69eb0b26459c192c695057",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-02\\SESSION.md",
+    "lastWriteUtc": "2026-09-07T08:57:15.3627702Z",
+    "length": 5560,
+    "archive": "agent-software-factory/.delivery/qr-mvp-02/SESSION.md"
+  },
+  {
+    "relative": ".delivery/qr-mvp-02/builder-factory.log",
+    "attributes": 1056,
+    "sha256": "bf4257ce50ca0a7d7558f4ff4d19b073edba0c361d23d31fb74c1f1fb94cf8e3",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-02\\builder-factory.log",
+    "lastWriteUtc": "2026-09-07T09:05:08.3301436Z",
+    "length": 217,
+    "archive": "agent-software-factory/.delivery/qr-mvp-02/builder-factory.log"
+  },
+  {
+    "relative": ".delivery/qr-mvp-02/builder-original-result.md",
+    "attributes": 1056,
+    "sha256": "e9b5af8120619faf894dacda37340028fe1398e8d4c4ac604bcdd71756b12b9c",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-02\\builder-original-result.md",
+    "lastWriteUtc": "2026-09-07T09:14:06.3492011Z",
+    "length": 2409,
+    "archive": "agent-software-factory/.delivery/qr-mvp-02/builder-original-result.md"
+  },
+  {
+    "relative": ".delivery/qr-mvp-02/ci-evidence.zip",
+    "attributes": 1056,
+    "sha256": "10bf2b982b618cc99793855ca89c00dfa4a776379d0a1f8c9561906a5f96923b",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-02\\ci-evidence.zip",
+    "lastWriteUtc": "2026-09-07T09:13:24.1157791Z",
+    "length": 872685,
+    "archive": "agent-software-factory/.delivery/qr-mvp-02/ci-evidence.zip"
+  },
+  {
+    "relative": ".delivery/qr-mvp-02/ci-factory.log",
+    "attributes": 1056,
+    "sha256": "719dbfda143d01daec00d6bc97bd0f013488685f1e38838bedb777023af62b6d",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-02\\ci-factory.log",
+    "lastWriteUtc": "2026-09-07T09:13:04.0809049Z",
+    "length": 16064,
+    "archive": "agent-software-factory/.delivery/qr-mvp-02/ci-factory.log"
+  },
+  {
+    "relative": ".delivery/qr-mvp-02/ci-product.log",
+    "attributes": 1056,
+    "sha256": "473329849dff7920b5292de3e3b6bb3866dbc74beb40d9d8ad243d789afbb0cc",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-02\\ci-product.log",
+    "lastWriteUtc": "2026-09-07T09:13:00.5346852Z",
+    "length": 53357,
+    "archive": "agent-software-factory/.delivery/qr-mvp-02/ci-product.log"
+  },
+  {
+    "relative": ".delivery/qr-mvp-02/lead-demo.json",
+    "attributes": 1056,
+    "sha256": "1c63da71dc5bb2aa7dc19a003fcb050e62be42a5aaef042d44401c4caa67efc0",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-02\\lead-demo.json",
+    "lastWriteUtc": "2026-09-07T09:07:54.2487678Z",
+    "length": 154,
+    "archive": "agent-software-factory/.delivery/qr-mvp-02/lead-demo.json"
+  },
+  {
+    "relative": ".delivery/qr-mvp-02/lead-demo.mjs",
+    "attributes": 1056,
+    "sha256": "7341c492a1f9e209d5b6f9007fecdf188b0d209ad691bd20aa565136d2c7879f",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-02\\lead-demo.mjs",
+    "lastWriteUtc": "2026-09-07T09:07:48.3084328Z",
+    "length": 693,
+    "archive": "agent-software-factory/.delivery/qr-mvp-02/lead-demo.mjs"
+  },
+  {
+    "relative": ".delivery/qr-mvp-02/lead-final-evidence.md",
+    "attributes": 1056,
+    "sha256": "101b72b1a0c25f190de0b590ab64d43636ca40f1b1821c6352b7122bc458fd87",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-02\\lead-final-evidence.md",
+    "lastWriteUtc": "2026-09-07T09:18:19.5339010Z",
+    "length": 8026,
+    "archive": "agent-software-factory/.delivery/qr-mvp-02/lead-final-evidence.md"
+  },
+  {
+    "relative": ".delivery/qr-mvp-02/lead-mixed-report.json",
+    "attributes": 1056,
+    "sha256": "cb74ab6afd2ba3578e90f543a0dcad49a9b0a11c537000ad1d5cd23d5ca31523",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-02\\lead-mixed-report.json",
+    "lastWriteUtc": "2026-09-07T09:11:47.8031137Z",
+    "length": 48494,
+    "archive": "agent-software-factory/.delivery/qr-mvp-02/lead-mixed-report.json"
+  },
+  {
+    "relative": ".delivery/qr-mvp-02/lead-sampled-report.html",
+    "attributes": 1056,
+    "sha256": "366013b9723d32aa95ea1b442ac8135fb9f42265a5018c4cd0e29f0c3bb2023d",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-02\\lead-sampled-report.html",
+    "lastWriteUtc": "2026-09-07T09:11:47.8326825Z",
+    "length": 151091,
+    "archive": "agent-software-factory/.delivery/qr-mvp-02/lead-sampled-report.html"
+  },
+  {
+    "relative": ".delivery/qr-mvp-02/lead-sampled-report.json",
+    "attributes": 1056,
+    "sha256": "cd1103ee73cae6f4f311dfc7bd623493f0cd7e1e0b9dd040f952a8b548ae6ba6",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-02\\lead-sampled-report.json",
+    "lastWriteUtc": "2026-09-07T09:11:47.8126146Z",
+    "length": 51394,
+    "archive": "agent-software-factory/.delivery/qr-mvp-02/lead-sampled-report.json"
+  },
+  {
+    "relative": ".delivery/qr-mvp-02/lead-starting-tests.log",
+    "attributes": 1056,
+    "sha256": "05b764e15803818a2e91a6fad88df68e41e2676826bbebdb4c1a304fded76699",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-02\\lead-starting-tests.log",
+    "lastWriteUtc": "2026-09-07T08:53:03.5953152Z",
+    "length": 2052,
+    "archive": "agent-software-factory/.delivery/qr-mvp-02/lead-starting-tests.log"
+  },
+  {
+    "relative": ".delivery/qr-mvp-02/requirements.md",
+    "attributes": 1056,
+    "sha256": "f17db69c892df88cd883b15f4b22b358d7d98f8273a3eccc113904a0f6f35c00",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-02\\requirements.md",
+    "lastWriteUtc": "2026-09-07T08:48:41.3589250Z",
+    "length": 6483,
+    "archive": "agent-software-factory/.delivery/qr-mvp-02/requirements.md"
+  },
+  {
+    "relative": ".delivery/qr-mvp-02/verifier-artifacts/browser-check.json",
+    "attributes": 1056,
+    "sha256": "9597f86dd04ba140ee5647a255d3c7c963e6178f564c47c6c6fdb52979f39428",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-02\\verifier-artifacts\\browser-check.json",
+    "lastWriteUtc": "2026-09-07T09:08:45.9329766Z",
+    "length": 255696,
+    "archive": "agent-software-factory/.delivery/qr-mvp-02/verifier-artifacts/browser-check.json"
+  },
+  {
+    "relative": ".delivery/qr-mvp-02/verifier-artifacts/browser-demo.png",
+    "attributes": 1056,
+    "sha256": "2c104a15251b4a159f53326f2b922878df8f54ad9539b968180e4add85e38a6a",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-02\\verifier-artifacts\\browser-demo.png",
+    "lastWriteUtc": "2026-09-07T09:08:35.1392062Z",
+    "length": 107771,
+    "archive": "agent-software-factory/.delivery/qr-mvp-02/verifier-artifacts/browser-demo.png"
+  },
+  {
+    "relative": ".delivery/qr-mvp-02/verifier-artifacts/browser-mobile.png",
+    "attributes": 1056,
+    "sha256": "52b001f77741f6338034182b8622475de8e39f7aeab0ede791d15729c3550e3e",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-02\\verifier-artifacts\\browser-mobile.png",
+    "lastWriteUtc": "2026-09-07T09:08:45.9252547Z",
+    "length": 116136,
+    "archive": "agent-software-factory/.delivery/qr-mvp-02/verifier-artifacts/browser-mobile.png"
+  },
+  {
+    "relative": ".delivery/qr-mvp-02/verifier-artifacts/browser-multi-coverage.png",
+    "attributes": 1056,
+    "sha256": "f8d55e3083c51ccc5267c8bf7deaff8c1f139ba781442e6c4d62a358d03c98b3",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-02\\verifier-artifacts\\browser-multi-coverage.png",
+    "lastWriteUtc": "2026-09-07T09:08:40.7395124Z",
+    "length": 35239,
+    "archive": "agent-software-factory/.delivery/qr-mvp-02/verifier-artifacts/browser-multi-coverage.png"
+  },
+  {
+    "relative": ".delivery/qr-mvp-02/verifier-artifacts/browser-multi-evidence.png",
+    "attributes": 1056,
+    "sha256": "345a208e4a2df8641fb61c9fcbf7c78090a99726d0aceb70aca24f0956770011",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-02\\verifier-artifacts\\browser-multi-evidence.png",
+    "lastWriteUtc": "2026-09-07T09:08:41.0184502Z",
+    "length": 109260,
+    "archive": "agent-software-factory/.delivery/qr-mvp-02/verifier-artifacts/browser-multi-evidence.png"
+  },
+  {
+    "relative": ".delivery/qr-mvp-02/verifier-artifacts/browser-multi-mobile.png",
+    "attributes": 1056,
+    "sha256": "2570d47b391067d177654be4f90097f6a2d26323285db4b14782cc25068ebaef",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-02\\verifier-artifacts\\browser-multi-mobile.png",
+    "lastWriteUtc": "2026-09-07T09:08:45.2812257Z",
+    "length": 38205,
+    "archive": "agent-software-factory/.delivery/qr-mvp-02/verifier-artifacts/browser-multi-mobile.png"
+  },
+  {
+    "relative": ".delivery/qr-mvp-02/verifier-artifacts/browser-report.png",
+    "attributes": 1056,
+    "sha256": "b27abdae7f29e64be582e38488928990a78217274af30c302157f6516dd10572",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-02\\verifier-artifacts\\browser-report.png",
+    "lastWriteUtc": "2026-09-07T09:08:37.2354688Z",
+    "length": 82549,
+    "archive": "agent-software-factory/.delivery/qr-mvp-02/verifier-artifacts/browser-report.png"
+  },
+  {
+    "relative": ".delivery/qr-mvp-02/verifier-artifacts/browser-sampled-coverage.png",
+    "attributes": 1056,
+    "sha256": "52efa393901775537af2050d5feb16f1da9c404b769c7800b62a070700b3e67c",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-02\\verifier-artifacts\\browser-sampled-coverage.png",
+    "lastWriteUtc": "2026-09-07T09:08:44.5984509Z",
+    "length": 37153,
+    "archive": "agent-software-factory/.delivery/qr-mvp-02/verifier-artifacts/browser-sampled-coverage.png"
+  },
+  {
+    "relative": ".delivery/qr-mvp-02/verifier-artifacts/controlled-multi-address-reports.json",
+    "attributes": 1056,
+    "sha256": "c104fc2784514a604ed911854a1b1f3a8a87c398ea572645d93deda0c7c857b3",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-02\\verifier-artifacts\\controlled-multi-address-reports.json",
+    "lastWriteUtc": "2026-09-07T09:07:36.5315061Z",
+    "length": 176204,
+    "archive": "agent-software-factory/.delivery/qr-mvp-02/verifier-artifacts/controlled-multi-address-reports.json"
+  },
+  {
+    "relative": ".delivery/qr-mvp-02/verifier-artifacts/controlled-reports.json",
+    "attributes": 1056,
+    "sha256": "812ed5e137fb7cd69fa26ff9fb5f61ae6b7ea9303fff8b30b01983ffda3eafe5",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-02\\verifier-artifacts\\controlled-reports.json",
+    "lastWriteUtc": "2026-09-07T09:07:34.3133983Z",
+    "length": 70647,
+    "archive": "agent-software-factory/.delivery/qr-mvp-02/verifier-artifacts/controlled-reports.json"
+  },
+  {
+    "relative": ".delivery/qr-mvp-02/verifier-artifacts/extra-controlled-evidence.json",
+    "attributes": 1056,
+    "sha256": "59c99c5d01c6accbb2717dbc74d26c0a06a8c36141675a256a4f4534372f14fb",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-02\\verifier-artifacts\\extra-controlled-evidence.json",
+    "lastWriteUtc": "2026-09-07T09:10:39.7386276Z",
+    "length": 47922,
+    "archive": "agent-software-factory/.delivery/qr-mvp-02/verifier-artifacts/extra-controlled-evidence.json"
+  },
+  {
+    "relative": ".delivery/qr-mvp-02/verifier-browser.log",
+    "attributes": 1056,
+    "sha256": "62c02a554ab6a4e1c633ebe47e3a8d2f99cae99bb011008d399a868b20de7f2f",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-02\\verifier-browser.log",
+    "lastWriteUtc": "2026-09-07T09:08:45.9307757Z",
+    "length": 1203,
+    "archive": "agent-software-factory/.delivery/qr-mvp-02/verifier-browser.log"
+  },
+  {
+    "relative": ".delivery/qr-mvp-02/verifier-extra-tests.log",
+    "attributes": 1056,
+    "sha256": "ab31cc829350a610a5907fb649939381ed039a55a9cbef9b92a17930af8f0d1a",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-02\\verifier-extra-tests.log",
+    "lastWriteUtc": "2026-09-07T09:10:39.7898493Z",
+    "length": 1956,
+    "archive": "agent-software-factory/.delivery/qr-mvp-02/verifier-extra-tests.log"
+  },
+  {
+    "relative": ".delivery/qr-mvp-02/verifier-extra.test.mjs",
+    "attributes": 1056,
+    "sha256": "a8ab718aa831e38fe11a7f63b71f0468e6b770942634390572bab79e7cbeb731",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-02\\verifier-extra.test.mjs",
+    "lastWriteUtc": "2026-09-07T09:10:37.7764386Z",
+    "length": 9688,
+    "archive": "agent-software-factory/.delivery/qr-mvp-02/verifier-extra.test.mjs"
+  },
+  {
+    "relative": ".delivery/qr-mvp-02/verifier-factory.log",
+    "attributes": 1056,
+    "sha256": "bf4257ce50ca0a7d7558f4ff4d19b073edba0c361d23d31fb74c1f1fb94cf8e3",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-02\\verifier-factory.log",
+    "lastWriteUtc": "2026-09-07T09:07:58.2942634Z",
+    "length": 217,
+    "archive": "agent-software-factory/.delivery/qr-mvp-02/verifier-factory.log"
+  },
+  {
+    "relative": ".delivery/qr-mvp-02/verifier-logic-review.md",
+    "attributes": 1056,
+    "sha256": "feab46fe0ecf61413977cba67c84bb74e52095981a28a300ba39d61344dc6087",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-02\\verifier-logic-review.md",
+    "lastWriteUtc": "2026-09-07T09:15:13.8153624Z",
+    "length": 1621,
+    "archive": "agent-software-factory/.delivery/qr-mvp-02/verifier-logic-review.md"
+  },
+  {
+    "relative": ".delivery/qr-mvp-02/verifier-manifest.json",
+    "attributes": 1056,
+    "sha256": "40c212d974493bd15ac0a7d9a2d1efc9ec9ce3273780efaca863778ce221b47f",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-02\\verifier-manifest.json",
+    "lastWriteUtc": "2026-09-07T09:15:21.5965504Z",
+    "length": 5552,
+    "archive": "agent-software-factory/.delivery/qr-mvp-02/verifier-manifest.json"
+  },
+  {
+    "relative": ".delivery/qr-mvp-02/verifier-product-tests.log",
+    "attributes": 1056,
+    "sha256": "837cb0de41fe9ba2243527a05bae2b7c4636fceb0b1b12bc2a8181deffebd3f7",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-02\\verifier-product-tests.log",
+    "lastWriteUtc": "2026-09-07T09:07:38.0264758Z",
+    "length": 5326,
+    "archive": "agent-software-factory/.delivery/qr-mvp-02/verifier-product-tests.log"
+  },
+  {
+    "relative": ".delivery/qr-mvp-02/verifier-review.md",
+    "attributes": 1056,
+    "sha256": "52da54007bd2623d43157c3e321190744e4e9c3e48561a03c5de286ceee12c69",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-02\\verifier-review.md",
+    "lastWriteUtc": "2026-09-07T09:15:02.9689851Z",
+    "length": 11187,
+    "archive": "agent-software-factory/.delivery/qr-mvp-02/verifier-review.md"
+  },
+  {
+    "relative": ".delivery/qr-mvp-02/verifier-revision-syntax.json",
+    "attributes": 1056,
+    "sha256": "7bdd2d9877b2819819b05081c828b8b628725c7b5cfa2b1a207a5b64d53147da",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.delivery\\qr-mvp-02\\verifier-revision-syntax.json",
+    "lastWriteUtc": "2026-09-07T09:12:34.4083841Z",
+    "length": 269,
+    "archive": "agent-software-factory/.delivery/qr-mvp-02/verifier-revision-syntax.json"
+  },
+  {
+    "relative": ".github/workflows/check-workflow.yml",
+    "attributes": 1056,
+    "sha256": "6e03d22014cf14ca19cb71f04b3ac8bbefc04a4b082724b30706daabd38e70d8",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.github\\workflows\\check-workflow.yml",
+    "lastWriteUtc": "2026-09-06T11:12:14.3337558Z",
+    "length": 727,
+    "archive": "agent-software-factory/.github/workflows/check-workflow.yml"
+  },
+  {
+    "relative": ".github/workflows/quantum-readiness.yml",
+    "attributes": 1056,
+    "sha256": "ffee1057d564b62aba9d64e165f7968f54636263bd4e413bb8c3a7d9db6ef679",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\.github\\workflows\\quantum-readiness.yml",
+    "lastWriteUtc": "2026-09-07T09:03:04.2594216Z",
+    "length": 2309,
+    "archive": "agent-software-factory/.github/workflows/quantum-readiness.yml"
+  },
+  {
+    "relative": "AGENTS.md",
+    "attributes": 1056,
+    "sha256": "5081566bd24f8d0937d942e45b8d39d61c26cf329f15e91a2b72af3bd9781935",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\AGENTS.md",
+    "lastWriteUtc": "2026-09-06T11:10:30.1102643Z",
+    "length": 876,
+    "archive": "agent-software-factory/AGENTS.md"
+  },
+  {
+    "relative": "README.md",
+    "attributes": 1056,
+    "sha256": "cef9035cf197ef245515b53665623123b32d0e7a4d14d20308b52760613cb693",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\README.md",
+    "lastWriteUtc": "2026-09-06T12:38:51.4412923Z",
+    "length": 3607,
+    "archive": "agent-software-factory/README.md"
+  },
+  {
+    "relative": "docs/ASF-MVP-01.md",
+    "attributes": 1056,
+    "sha256": "c8c6a9254770f4e645aedd453f0ddfaaabf4b1693370dd161970adeb41492fce",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\docs\\ASF-MVP-01.md",
+    "lastWriteUtc": "2026-09-06T11:10:35.1961876Z",
+    "length": 3377,
+    "archive": "agent-software-factory/docs/ASF-MVP-01.md"
+  },
+  {
+    "relative": "products/quantum-readiness/.artifacts/browser-check.json",
+    "attributes": 1056,
+    "sha256": "9597f86dd04ba140ee5647a255d3c7c963e6178f564c47c6c6fdb52979f39428",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\products\\quantum-readiness\\.artifacts\\browser-check.json",
+    "lastWriteUtc": "2026-09-07T09:08:45.9329766Z",
+    "length": 255696,
+    "archive": "agent-software-factory/products/quantum-readiness/.artifacts/browser-check.json"
+  },
+  {
+    "relative": "products/quantum-readiness/.artifacts/browser-demo.png",
+    "attributes": 1056,
+    "sha256": "2c104a15251b4a159f53326f2b922878df8f54ad9539b968180e4add85e38a6a",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\products\\quantum-readiness\\.artifacts\\browser-demo.png",
+    "lastWriteUtc": "2026-09-07T09:08:35.1392062Z",
+    "length": 107771,
+    "archive": "agent-software-factory/products/quantum-readiness/.artifacts/browser-demo.png"
+  },
+  {
+    "relative": "products/quantum-readiness/.artifacts/browser-mobile.png",
+    "attributes": 1056,
+    "sha256": "52b001f77741f6338034182b8622475de8e39f7aeab0ede791d15729c3550e3e",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\products\\quantum-readiness\\.artifacts\\browser-mobile.png",
+    "lastWriteUtc": "2026-09-07T09:08:45.9252547Z",
+    "length": 116136,
+    "archive": "agent-software-factory/products/quantum-readiness/.artifacts/browser-mobile.png"
+  },
+  {
+    "relative": "products/quantum-readiness/.artifacts/browser-multi-coverage.png",
+    "attributes": 1056,
+    "sha256": "f8d55e3083c51ccc5267c8bf7deaff8c1f139ba781442e6c4d62a358d03c98b3",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\products\\quantum-readiness\\.artifacts\\browser-multi-coverage.png",
+    "lastWriteUtc": "2026-09-07T09:08:40.7395124Z",
+    "length": 35239,
+    "archive": "agent-software-factory/products/quantum-readiness/.artifacts/browser-multi-coverage.png"
+  },
+  {
+    "relative": "products/quantum-readiness/.artifacts/browser-multi-evidence.png",
+    "attributes": 1056,
+    "sha256": "345a208e4a2df8641fb61c9fcbf7c78090a99726d0aceb70aca24f0956770011",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\products\\quantum-readiness\\.artifacts\\browser-multi-evidence.png",
+    "lastWriteUtc": "2026-09-07T09:08:41.0184502Z",
+    "length": 109260,
+    "archive": "agent-software-factory/products/quantum-readiness/.artifacts/browser-multi-evidence.png"
+  },
+  {
+    "relative": "products/quantum-readiness/.artifacts/browser-multi-mobile.png",
+    "attributes": 1056,
+    "sha256": "2570d47b391067d177654be4f90097f6a2d26323285db4b14782cc25068ebaef",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\products\\quantum-readiness\\.artifacts\\browser-multi-mobile.png",
+    "lastWriteUtc": "2026-09-07T09:08:45.2812257Z",
+    "length": 38205,
+    "archive": "agent-software-factory/products/quantum-readiness/.artifacts/browser-multi-mobile.png"
+  },
+  {
+    "relative": "products/quantum-readiness/.artifacts/browser-report.png",
+    "attributes": 1056,
+    "sha256": "b27abdae7f29e64be582e38488928990a78217274af30c302157f6516dd10572",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\products\\quantum-readiness\\.artifacts\\browser-report.png",
+    "lastWriteUtc": "2026-09-07T09:08:37.2354688Z",
+    "length": 82549,
+    "archive": "agent-software-factory/products/quantum-readiness/.artifacts/browser-report.png"
+  },
+  {
+    "relative": "products/quantum-readiness/.artifacts/browser-sampled-coverage.png",
+    "attributes": 1056,
+    "sha256": "52efa393901775537af2050d5feb16f1da9c404b769c7800b62a070700b3e67c",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\products\\quantum-readiness\\.artifacts\\browser-sampled-coverage.png",
+    "lastWriteUtc": "2026-09-07T09:08:44.5984509Z",
+    "length": 37153,
+    "archive": "agent-software-factory/products/quantum-readiness/.artifacts/browser-sampled-coverage.png"
+  },
+  {
+    "relative": "products/quantum-readiness/.artifacts/builder-browser-first.log",
+    "attributes": 1056,
+    "sha256": "62c02a554ab6a4e1c633ebe47e3a8d2f99cae99bb011008d399a868b20de7f2f",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\products\\quantum-readiness\\.artifacts\\builder-browser-first.log",
+    "lastWriteUtc": "2026-09-07T09:03:27.0259848Z",
+    "length": 1203,
+    "archive": "agent-software-factory/products/quantum-readiness/.artifacts/builder-browser-first.log"
+  },
+  {
+    "relative": "products/quantum-readiness/.artifacts/builder-final-tests.log",
+    "attributes": 1056,
+    "sha256": "c7927875ca1ba167cee804bf5102effad9d5d9ba873c3b2c1346b2298085b615",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\products\\quantum-readiness\\.artifacts\\builder-final-tests.log",
+    "lastWriteUtc": "2026-09-07T09:05:02.6740000Z",
+    "length": 5331,
+    "archive": "agent-software-factory/products/quantum-readiness/.artifacts/builder-final-tests.log"
+  },
+  {
+    "relative": "products/quantum-readiness/.artifacts/builder-first-tests.log",
+    "attributes": 1056,
+    "sha256": "e5dbe0ed77b7cce98b02d8d27a4aba69c4dde9cadc10b7ad61de869a53ae2cbe",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\products\\quantum-readiness\\.artifacts\\builder-first-tests.log",
+    "lastWriteUtc": "2026-09-07T08:57:36.1653550Z",
+    "length": 2859,
+    "archive": "agent-software-factory/products/quantum-readiness/.artifacts/builder-first-tests.log"
+  },
+  {
+    "relative": "products/quantum-readiness/.artifacts/builder-second-tests.log",
+    "attributes": 1056,
+    "sha256": "41b5ce6fdd5baf70f8c67c18c34c2b91fe2f906a2de309c734faad0ce2801e89",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\products\\quantum-readiness\\.artifacts\\builder-second-tests.log",
+    "lastWriteUtc": "2026-09-07T09:00:31.8463146Z",
+    "length": 5327,
+    "archive": "agent-software-factory/products/quantum-readiness/.artifacts/builder-second-tests.log"
+  },
+  {
+    "relative": "products/quantum-readiness/.artifacts/controlled-multi-address-reports.json",
+    "attributes": 1056,
+    "sha256": "c104fc2784514a604ed911854a1b1f3a8a87c398ea572645d93deda0c7c857b3",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\products\\quantum-readiness\\.artifacts\\controlled-multi-address-reports.json",
+    "lastWriteUtc": "2026-09-07T09:07:36.5315061Z",
+    "length": 176204,
+    "archive": "agent-software-factory/products/quantum-readiness/.artifacts/controlled-multi-address-reports.json"
+  },
+  {
+    "relative": "products/quantum-readiness/.artifacts/controlled-reports.json",
+    "attributes": 1056,
+    "sha256": "812ed5e137fb7cd69fa26ff9fb5f61ae6b7ea9303fff8b30b01983ffda3eafe5",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\products\\quantum-readiness\\.artifacts\\controlled-reports.json",
+    "lastWriteUtc": "2026-09-07T09:07:34.3133983Z",
+    "length": 70647,
+    "archive": "agent-software-factory/products/quantum-readiness/.artifacts/controlled-reports.json"
+  },
+  {
+    "relative": "products/quantum-readiness/.gitignore",
+    "attributes": 1056,
+    "sha256": "b5978b28dcef5f256004cb5ed6ade9276697106d4808c7dd9f25c59fbb6da845",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\products\\quantum-readiness\\.gitignore",
+    "lastWriteUtc": "2026-09-06T12:22:09.3471926Z",
+    "length": 26,
+    "archive": "agent-software-factory/products/quantum-readiness/.gitignore"
+  },
+  {
+    "relative": "products/quantum-readiness/README.md",
+    "attributes": 1056,
+    "sha256": "d6afbb7927db55fcc32f88b71728537c464625102852a54d2c2c939990aca96d",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\products\\quantum-readiness\\README.md",
+    "lastWriteUtc": "2026-09-07T09:04:51.6338328Z",
+    "length": 12962,
+    "archive": "agent-software-factory/products/quantum-readiness/README.md"
+  },
+  {
+    "relative": "products/quantum-readiness/package-lock.json",
+    "attributes": 1056,
+    "sha256": "edb8dd9b86f6656f6a4b983643640eec68cb5c9b57c34a7ec73a7f7a656219e3",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\products\\quantum-readiness\\package-lock.json",
+    "lastWriteUtc": "2026-09-07T09:03:08.7754661Z",
+    "length": 2697,
+    "archive": "agent-software-factory/products/quantum-readiness/package-lock.json"
+  },
+  {
+    "relative": "products/quantum-readiness/package.json",
+    "attributes": 1056,
+    "sha256": "7b9920f145f1d9a1bafff5cbc048d4c9485530699cd68ddf7e6c2892af5feb9d",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\products\\quantum-readiness\\package.json",
+    "lastWriteUtc": "2026-09-07T09:03:06.7289431Z",
+    "length": 400,
+    "archive": "agent-software-factory/products/quantum-readiness/package.json"
+  },
+  {
+    "relative": "products/quantum-readiness/public/app.js",
+    "attributes": 1056,
+    "sha256": "a2f3f9fc7a9d5d5a76b28cb33298cf21715b890fa121b1e002db563cfe3aa147",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\products\\quantum-readiness\\public\\app.js",
+    "lastWriteUtc": "2026-09-07T09:00:06.3868699Z",
+    "length": 19243,
+    "archive": "agent-software-factory/products/quantum-readiness/public/app.js"
+  },
+  {
+    "relative": "products/quantum-readiness/public/index.html",
+    "attributes": 1056,
+    "sha256": "bd9d45371db7c3b5eea463929406e418b6a8671bc8d5c88411fc5a357d274d09",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\products\\quantum-readiness\\public\\index.html",
+    "lastWriteUtc": "2026-09-07T08:55:07.6924779Z",
+    "length": 6629,
+    "archive": "agent-software-factory/products/quantum-readiness/public/index.html"
+  },
+  {
+    "relative": "products/quantum-readiness/public/style.css",
+    "attributes": 1056,
+    "sha256": "47b3f98dc805740813639c126512c47485e645368569f02b01f75c44da2b9553",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\products\\quantum-readiness\\public\\style.css",
+    "lastWriteUtc": "2026-09-07T08:57:12.1225891Z",
+    "length": 10603,
+    "archive": "agent-software-factory/products/quantum-readiness/public/style.css"
+  },
+  {
+    "relative": "products/quantum-readiness/scripts/browser-check.mjs",
+    "attributes": 1056,
+    "sha256": "f58f113faa86b25ce1d2305a4ecb4ec1699e887324cec6cace672b1fefbe7eaa",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\products\\quantum-readiness\\scripts\\browser-check.mjs",
+    "lastWriteUtc": "2026-09-07T09:03:02.2129020Z",
+    "length": 18774,
+    "archive": "agent-software-factory/products/quantum-readiness/scripts/browser-check.mjs"
+  },
+  {
+    "relative": "products/quantum-readiness/scripts/demo.mjs",
+    "attributes": 1056,
+    "sha256": "7e09ca155aa87ab81e8b62225be2dd1ee8b808e747824eb81c3bc255a814be3e",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\products\\quantum-readiness\\scripts\\demo.mjs",
+    "lastWriteUtc": "2026-09-07T08:57:30.1642764Z",
+    "length": 943,
+    "archive": "agent-software-factory/products/quantum-readiness/scripts/demo.mjs"
+  },
+  {
+    "relative": "products/quantum-readiness/src/assessment.mjs",
+    "attributes": 1056,
+    "sha256": "74bb8521aa99730e3811c762b070e50823ae703bc5d799e8e044d9f00bd69b43",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\products\\quantum-readiness\\src\\assessment.mjs",
+    "lastWriteUtc": "2026-09-07T08:56:01.1158471Z",
+    "length": 5380,
+    "archive": "agent-software-factory/products/quantum-readiness/src/assessment.mjs"
+  },
+  {
+    "relative": "products/quantum-readiness/src/limits.mjs",
+    "attributes": 1056,
+    "sha256": "2ab1afd5e25aee6be91b586df031fa73194bac2feec48b3bad46de2b4e6a2b0f",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\products\\quantum-readiness\\src\\limits.mjs",
+    "lastWriteUtc": "2026-09-07T08:53:59.9060515Z",
+    "length": 354,
+    "archive": "agent-software-factory/products/quantum-readiness/src/limits.mjs"
+  },
+  {
+    "relative": "products/quantum-readiness/src/main.mjs",
+    "attributes": 1056,
+    "sha256": "233277754d2256ed077e819a060435be0c5a5c86dbe63c16806848e7d481a712",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\products\\quantum-readiness\\src\\main.mjs",
+    "lastWriteUtc": "2026-09-06T12:38:42.9568458Z",
+    "length": 646,
+    "archive": "agent-software-factory/products/quantum-readiness/src/main.mjs"
+  },
+  {
+    "relative": "products/quantum-readiness/src/report.mjs",
+    "attributes": 1056,
+    "sha256": "e8c1700c2c023196d36d07bae3ac308244b3e930a3fc2470aa2065ba9bbc6e78",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\products\\quantum-readiness\\src\\report.mjs",
+    "lastWriteUtc": "2026-09-07T09:00:08.9700729Z",
+    "length": 9026,
+    "archive": "agent-software-factory/products/quantum-readiness/src/report.mjs"
+  },
+  {
+    "relative": "products/quantum-readiness/src/rules.mjs",
+    "attributes": 1056,
+    "sha256": "5d99afcc371dd4093a2feb2d369b165129a965f032a3c83cc4870824576616ee",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\products\\quantum-readiness\\src\\rules.mjs",
+    "lastWriteUtc": "2026-09-07T09:00:22.1064124Z",
+    "length": 16322,
+    "archive": "agent-software-factory/products/quantum-readiness/src/rules.mjs"
+  },
+  {
+    "relative": "products/quantum-readiness/src/server.mjs",
+    "attributes": 1056,
+    "sha256": "dadae74bdbf810aa440c22a87f672ce912f4177578f4c3c613963f3377400ef4",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\products\\quantum-readiness\\src\\server.mjs",
+    "lastWriteUtc": "2026-09-06T12:30:44.9334915Z",
+    "length": 5539,
+    "archive": "agent-software-factory/products/quantum-readiness/src/server.mjs"
+  },
+  {
+    "relative": "products/quantum-readiness/src/targets.mjs",
+    "attributes": 1056,
+    "sha256": "7b8d2beab5cc52fb260f44d86fb5245932e603d4ec4e6c203624b5d989e3128d",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\products\\quantum-readiness\\src\\targets.mjs",
+    "lastWriteUtc": "2026-09-07T08:54:02.7510489Z",
+    "length": 7088,
+    "archive": "agent-software-factory/products/quantum-readiness/src/targets.mjs"
+  },
+  {
+    "relative": "products/quantum-readiness/src/tls-probe.mjs",
+    "attributes": 1056,
+    "sha256": "7430252b8b55fff27f6b8368d6a586e545d90e911195a343678e07858bb38909",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\products\\quantum-readiness\\src\\tls-probe.mjs",
+    "lastWriteUtc": "2026-09-07T08:56:04.6384871Z",
+    "length": 7707,
+    "archive": "agent-software-factory/products/quantum-readiness/src/tls-probe.mjs"
+  },
+  {
+    "relative": "products/quantum-readiness/test/harness.mjs",
+    "attributes": 1056,
+    "sha256": "760ef741c6466256c2e674790dbc54eef211385faa533dee3116dd0a9fc43bfd",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\products\\quantum-readiness\\test\\harness.mjs",
+    "lastWriteUtc": "2026-09-07T08:57:25.3013719Z",
+    "length": 5872,
+    "archive": "agent-software-factory/products/quantum-readiness/test/harness.mjs"
+  },
+  {
+    "relative": "products/quantum-readiness/test/integration.test.mjs",
+    "attributes": 1056,
+    "sha256": "d3a5c4894d150391d1886afa7c6af83309bd04fad12dfeb176218b6f0428651f",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\products\\quantum-readiness\\test\\integration.test.mjs",
+    "lastWriteUtc": "2026-09-07T08:57:28.0226217Z",
+    "length": 7288,
+    "archive": "agent-software-factory/products/quantum-readiness/test/integration.test.mjs"
+  },
+  {
+    "relative": "products/quantum-readiness/test/multi-address.test.mjs",
+    "attributes": 1056,
+    "sha256": "6c193430e6977877532b39d5f1c03814ad512658cc9ff0fafb4c2394f22058db",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\products\\quantum-readiness\\test\\multi-address.test.mjs",
+    "lastWriteUtc": "2026-09-07T09:00:24.4108258Z",
+    "length": 13052,
+    "archive": "agent-software-factory/products/quantum-readiness/test/multi-address.test.mjs"
+  },
+  {
+    "relative": "products/quantum-readiness/test/security.test.mjs",
+    "attributes": 1056,
+    "sha256": "22c377bea872f513480e5553b0167f44587782e4ebe63c09b0155f022d0b558d",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\products\\quantum-readiness\\test\\security.test.mjs",
+    "lastWriteUtc": "2026-09-07T09:00:19.5668919Z",
+    "length": 9814,
+    "archive": "agent-software-factory/products/quantum-readiness/test/security.test.mjs"
+  },
+  {
+    "relative": "scripts/check-workflow.mjs",
+    "attributes": 1056,
+    "sha256": "01142052f7a95c0c1e3d9b87de4a5fa4b1841f75205adbbab9a9c8cb5fac8dc7",
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\scripts\\check-workflow.mjs",
+    "lastWriteUtc": "2026-09-06T11:22:10.2912550Z",
+    "length": 3029,
+    "archive": "agent-software-factory/scripts/check-workflow.mjs"
+  },
+  {
+    "path": "C:\\Users\\flori\\OneDrive\\Documenten\\ChatGPT\\agent-software-factory\\products\\quantum-readiness\\node_modules\\.package-lock.json",
+    "relative": "products/quantum-readiness/node_modules/.package-lock.json",
+    "archive": "agent-software-factory/products/quantum-readiness/node_modules/.package-lock.json",
+    "length": 1519,
+    "sha256": "86920cbbe9c0a9574e7ab2009449f07d161b9885b8f831d0b46b3180a6824320",
+    "reason": "Original npm metadata differs from fresh locked dependency installation; preserved exactly."
+  }
+]

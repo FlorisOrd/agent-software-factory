@@ -1,0 +1,35 @@
+{"demonstration":"real task-owned TLS handshakes","node":"24.19.0","openssl":"3.5.7","acceptedConnections":8,"groups":["X25519","X25519MLKEM768"],"classicalHybridOffer":"bounded-negative","invalid":["certificate-error","certificate-error"],"timeout":["timeout","timeout"]}
+✔ controlled real TLS: classical, standardized hybrid, certificate failure and timeout evidence (1078.2022ms)
+✔ unsupported configured group, unknown measured group and unknown authentication remain incomplete (468.3033ms)
+✔ certificate trust is never disabled and ciphertext/timeout limits end actual connections (235.4469ms)
+✔ fixture target escape and missing permission make no connections; production has no fixture bypass (179.9528ms)
+✔ API exposes original JSON and escaped HTML exports only for process-owned report IDs (360.3859ms)
+{"demonstration":"production boundary instrumentation; no public network contact","aCalls":1,"aaaaCalls":1,"maxActive":1,"attempts":[{"host":"1.1.1.1","port":443,"family":4},{"host":"1.1.1.1","port":443,"family":4},{"host":"2606:4700::1111","port":443,"family":6},{"host":"2606:4700::1111","port":443,"family":6},{"host":"8.8.8.8","port":443,"family":4},{"host":"8.8.8.8","port":443,"family":4}],"sampling":{"strategy":"numeric-sort-family-interleave-v1","maxAddresses":3,"dnsAnswerCount":4,"totalValidatedAddresses":4,"duplicateAnswers":0,"selectedCount":3,"selectedAddresses":[{"address":"1.1.1.1","family":4},{"address":"2606:4700::1111","family":6},{"address":"8.8.8.8","family":4}],"unselectedAddresses":[{"address":"9.9.9.9","family":4}],"reason":"The 3-address cap leaves 1 validated address(es) unselected. Numeric order alternates IPv4 then IPv6 while available; this sample does not represent every edge.","assessedCount":3,"assessedAddresses":[{"address":"1.1.1.1","family":4},{"address":"2606:4700::1111","family":6},{"address":"8.8.8.8","family":4}],"unassessedCount":1}}
+✔ selection canonicalizes only after validation, numeric-sorts both families, interleaves and caps deterministically (12.7225ms)
+✔ production validates unsafe, malformed, mismatched and incomplete answers beyond the cap before ANY connection (146.7027ms)
+✔ production instruments exactly one A/AAAA lookup and six sequential pinned attempts; no public network contact (26.504ms)
+✔ global deadline stops active work and records remaining selected profiles without opening connections (21.2644ms)
+{"demonstration":"real task-owned distinct IPv4 and IPv6 endpoints, one shared port per hostname","connections":14,"byEndpoint":{"mixed.qr.test|127.0.0.1":2,"mixed.qr.test|::1":2,"consistent.qr.test|127.0.0.1":2,"consistent.qr.test|::1":2,"sampled.qr.test|127.0.0.1":2,"sampled.qr.test|::1":2,"sampled.qr.test|127.0.0.2":2},"mixedFindings":["cross-address-hybrid","cross-address-classical-group","cross-address-certificate-hybrid-mlkem-tls13-v1","cross-address-coverage-hybrid-mlkem-tls13-v1"],"consistentFindings":[],"sampling":{"strategy":"numeric-sort-family-interleave-v1","maxAddresses":3,"dnsAnswerCount":4,"totalValidatedAddresses":4,"duplicateAnswers":0,"selectedCount":3,"selectedAddresses":[{"address":"127.0.0.1","family":4},{"address":"::1","family":6},{"address":"127.0.0.2","family":4}],"unselectedAddresses":[{"address":"127.0.0.3","family":4}],"reason":"The 3-address cap leaves 1 validated address(es) unselected. Numeric order alternates IPv4 then IPv6 while available; this sample does not represent every edge.","validation":"ISOLATED FIXTURE: task-owned loopback address inventory; no public DNS validation is claimed.","assessedCount":3,"assessedAddresses":[{"address":"127.0.0.1","family":4},{"address":"::1","family":6},{"address":"127.0.0.2","family":4}],"unassessedCount":1}}
+✔ real distinct IPv4/IPv6 fixture addresses demonstrate mixed, consistent and capped coverage with complete exports (665.0044ms)
+✔ cross-address certificate and metadata gaps remain incomplete; equivalent bounded negatives do not manufacture inconsistency (290.0936ms)
+✔ shared encrypted-byte budget prevents later connections after real controlled budget exhaustion (569.484ms)
+✔ hostname normalization rejects URL, credentials, paths, ports and alternative IP forms (12.3077ms)
+✔ authorization is bound to exact normalized hostname and business context remains unknown (0.4766ms)
+✔ IPv4 and IPv6 deny private, reserved, documentation, metadata and transition ranges (1.4051ms)
+✔ mixed DNS results, missing results and address-family mismatch fail before pinning (2.0907ms)
+✔ production permission and unsafe DNS targets make zero connection attempts (12.621ms)
+✔ production single-address regression pins both probes without DNS re-resolution (21.6638ms)
+✔ DNS deadline cancels the owned resolver and rejects incomplete resolution (44.2409ms)
+✔ HTML exports escape malicious evidence and use safe source links and observation anchors (1.9037ms)
+✔ local server rejects hostile Host/Origin, missing CSRF, unsafe paths and oversized bodies (73.3829ms)
+✔ concurrent delayed bodies cannot enter the assessment simultaneously (45.8109ms)
+✔ report retention expires without another assessment and global attempt limits are enforced (42.0445ms)
+ℹ tests 23
+ℹ suites 0
+ℹ pass 23
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5266.1529
+
